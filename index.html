@@ -1,0 +1,1427 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <script>
+    (function (d) {
+      d.classList.remove("no-js");
+      /* boot loader: first visit in this tab only, never with reduced motion */
+      try {
+        var seen = sessionStorage.getItem("ak-booted");
+        var calm = window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches;
+        if (!seen && !calm) { d.classList.add("booting"); setTimeout(function () { d.classList.remove("booting"); }, 5000); }
+      } catch (e) {}
+    })(document.documentElement);
+  </script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Anek Kumar — Full Stack Developer &amp; Digital Marketer | Noida</title>
+  <meta name="description" content="Anek Kumar is a Full Stack Developer and Digital Marketer in Noida. I build websites, e-commerce stores and CRMs, then grow them with SEO, Meta Ads and Google Ads.">
+  <meta name="author" content="Anek Kumar">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#000000" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+  <link rel="canonical" href="https://www.anekkumar.in/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.anekkumar.in/">
+  <meta property="og:title" content="Anek Kumar — Full Stack Developer &amp; Digital Marketer">
+  <meta property="og:description" content="I build websites, then I bring them customers. #1 on Google for 55 keywords and 1,149 Meta leads at ₹288. Live projects, real screenshots.">
+  <meta property="og:image" content="https://www.anekkumar.in/assets/img/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=Caveat:wght@500;700&family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/phone.css">
+  <link rel="stylesheet" href="assets/css/extras.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+  <link rel="stylesheet" href="assets/css/human.css">
+  <link rel="stylesheet" href="assets/css/studio.css">
+  <link rel="stylesheet" href="assets/css/android.css">
+  <link rel="stylesheet" href="assets/css/android-more.css">
+  <link rel="stylesheet" href="assets/css/fun.css">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="apple-touch-icon" href="assets/img/icon-192.png">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Anek Kumar",
+    "url": "https://www.anekkumar.in/",
+    "jobTitle": "Full Stack Developer & Digital Marketing Specialist",
+    "email": "mailto:anekkumar9518@gmail.com",
+    "telephone": "+91-9518848804",
+    "address": { "@type": "PostalAddress", "addressLocality": "Noida", "addressRegion": "Uttar Pradesh", "addressCountry": "IN" },
+    "alumniOf": "Dr. Bhimrao Ambedkar University, Agra",
+    "worksFor": { "@type": "Organization", "name": "Shubharambh Infra Advisors", "url": "https://shubharambhinfraadvisors.com" },
+    "knowsAbout": ["Full Stack Web Development", "Python", "Django", "PHP", "MySQL", "JavaScript", "React", "Node.js", "SEO", "Meta Ads", "Google Ads", "CRM Development"],
+    "sameAs": ["https://github.com/Anekkumar9518"]
+  }
+  </script>
+</head>
+<body>
+  <!-- Boot loader (first visit only) -->
+  <div class="boot" id="boot" aria-hidden="true">
+    <div class="boot__in">
+      <p class="boot__brand"><span class="boot__mark">AK</span>anekkumar.in</p>
+      <div class="boot__num"><span id="bootNum">0</span><small>%</small></div>
+      <p class="boot__msg" id="bootMsg">Loading projects…</p>
+      <div class="boot__bar"><i id="bootBar"></i></div>
+      <p class="boot__list">Websites · SEO · Meta Ads · CRMs · Google rankings</p>
+    </div>
+    <div class="boot__grid" id="bootGrid"></div>
+  </div>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="progress" aria-hidden="true"><span id="progressBar"></span></div>
+
+  <!-- Top bar (content layer, not glass) -->
+  <header class="top">
+    <div class="wrap top__in">
+      <a class="me" href="#home" aria-label="Anek Kumar, home">
+        <span class="me__mark" aria-hidden="true">AK</span>
+        <span class="me__name">Anek Kumar</span>
+      </a>
+      <div class="top__right">
+        <button type="button" class="kbtn" data-cmdk aria-label="Open the command menu (Ctrl K)"><i data-lucide="command" aria-hidden="true"></i><span>Ctrl K</span></button>
+        <span class="live"><i aria-hidden="true"></i>Available for freelance</span>
+        <a class="btn btn--gray btn--sm" href="assets/cv/Anek-Kumar-CV.pdf" download="Anek-Kumar-CV.pdf"><i data-lucide="download" aria-hidden="true"></i>CV</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Dock: the one glass surface (functional layer) -->
+  <nav class="dock" aria-label="Sections">
+    <a href="#home" class="dock__item is-active" aria-current="true"><i data-lucide="house" aria-hidden="true"></i><span>Home</span></a>
+    <a href="#work" class="dock__item"><i data-lucide="layout-grid" aria-hidden="true"></i><span>Work</span></a>
+    <a href="#results" class="dock__item"><i data-lucide="chart-line" aria-hidden="true"></i><span>Results</span></a>
+    <a href="#resume" class="dock__item"><i data-lucide="file-text" aria-hidden="true"></i><span>Resume</span></a>
+    <a href="#contact" class="dock__item"><i data-lucide="message-circle" aria-hidden="true"></i><span>Contact</span></a>
+  </nav>
+
+  <main id="main">
+    <!-- ================= HERO ================= -->
+    <section class="hero" id="home">
+      <div class="wrap hero__copy">
+        <div class="hmeta intro" style="--d:0ms">
+          <span>Full Stack Developer &amp; Digital Marketer</span>
+          <span>SEO · Meta Ads · Google Ads</span>
+          <span>Noida, IN · <time id="istNow">--:--</time> IST</span>
+          <span>Shipping since 2023</span>
+        </div>
+        <div class="hgrid">
+        <h1 class="hero__title hero__title--human" aria-label="I build websites, then I bring them customers.">
+          <span aria-hidden="true"><span class="w" style="--i:0">I</span> <span class="w" style="--i:1">build</span> <span class="w" style="--i:2">websites,</span> <span class="w" style="--i:3">then</span> <span class="w" style="--i:4">I</span> <span class="w" style="--i:5">bring</span> <span class="w" style="--i:6">them</span> <span class="w hl-mark" style="--i:7">customers.</span></span>
+        </h1>
+        <div class="hside">
+        <p class="hero__sub intro" style="--d:650ms">Hi, I'm Anek. I write the code myself, then I run the SEO and the Meta ads that fill it with leads. Most of my work is in real estate, and I'm based in Noida.</p>
+        <div class="hero__cta intro" style="--d:800ms">
+          <a href="#work" class="btn btn--blue" data-magnet>See my work<i data-lucide="arrow-down" aria-hidden="true"></i></a>
+          <a href="https://wa.me/919518848804?text=Hi%20Anek%2C%20I%20saw%20your%20portfolio" class="btn btn--gray" target="_blank" rel="noopener" data-magnet><i data-lucide="message-circle" aria-hidden="true"></i>WhatsApp me</a>
+        </div>
+        <ol class="proofs intro" style="--d:950ms" aria-label="Results, with proof">
+          <li><a href="#rankings" data-peek="assets/img/rank/serp-11.webp"><b>#1</b><span>on Google for 55 keywords</span><i data-lucide="arrow-down-right" aria-hidden="true"></i></a></li>
+          <li><a href="#results" data-peek="assets/img/seo/gsc-6-months.webp"><b>1.22M</b><span>Google impressions in 6 months</span><i data-lucide="arrow-down-right" aria-hidden="true"></i></a></li>
+          <li><a href="#ads" data-peek="assets/img/ads/meta-leads.webp"><b>1,149</b><span>property leads from Meta ads</span><i data-lucide="arrow-down-right" aria-hidden="true"></i></a></li>
+        </ol>
+        </div>
+        </div>
+      </div>
+
+      <div class="stage intro" id="stage" style="--d:950ms">
+        <div class="aura" aria-hidden="true"><span class="a1"></span><span class="a2"></span><span class="a3"></span></div>
+        <div class="stage__in">
+          <!-- Laptop: slideshow of real screenshots -->
+          <figure class="laptop">
+            <div class="laptop__screen">
+              <div class="slides" id="slides">
+                <img class="slide is-on" src="assets/img/projects/shubharambh.webp" data-host="shubharambhinfraadvisors.com" alt="shubharambhinfraadvisors.com, built by Anek Kumar" width="1200" height="675" data-zoom>
+                <img class="slide" src="assets/img/projects/matrixacres.webp" data-host="matrixacres.in" alt="matrixacres.in" width="1200" height="675" loading="lazy" data-zoom>
+                <img class="slide" src="assets/img/projects/lmc.webp" data-host="lmcstore.in" alt="lmcstore.in" width="1200" height="675" loading="lazy" data-zoom>
+                <img class="slide" src="assets/img/projects/harisabzi.webp" data-host="harisabziwala.com" alt="harisabziwala.com" width="1200" height="675" loading="lazy" data-zoom>
+                <img class="slide" src="assets/img/projects/visionwave-tools.webp" data-host="visionwavetechnology.com" alt="visionwavetechnology.com tools page" width="1200" height="675" loading="lazy" data-zoom>
+                <img class="slide" src="assets/img/projects/ezzy.webp" data-host="ezzycommerce.store" alt="ezzycommerce.store" width="1200" height="675" loading="lazy" data-zoom>
+              </div>
+              <span class="screen-pill"><i></i><b id="slideHost">shubharambhinfraadvisors.com</b></span>
+            </div>
+            <div class="laptop__base" aria-hidden="true"></div>
+            <figcaption class="sr-only">matrixacres.in on a laptop</figcaption>
+          </figure>
+
+          <!-- iPhone: a live home screen. Time, date, battery, network and wallpaper follow the visitor's real device. -->
+          <div class="phone" id="phone" aria-label="My projects as apps. Tap one to see details.">
+            <span class="phone__btn phone__btn--action" aria-hidden="true"></span>
+            <span class="phone__btn phone__btn--vup" aria-hidden="true"></span>
+            <span class="phone__btn phone__btn--vdown" aria-hidden="true"></span>
+            <span class="phone__btn phone__btn--power" aria-hidden="true"></span>
+            <div class="phone__screen" id="phoneScreen">
+              <div class="wall" aria-hidden="true"><i class="wall__b1"></i><i class="wall__b2"></i><i class="wall__b3"></i><span class="wall__stars"></span></div>
+
+              <div class="sbar" aria-hidden="true">
+                <span class="sbar__time" id="pTime">9:41</span>
+                <span class="island" id="island">
+                  <span class="island__act" data-i="0"><span class="island__l"><span class="island__ic" style="--c:#4285f4"><i data-lucide="search"></i></span><b>#1 on Google</b></span><span class="island__r">55 keywords</span></span>
+                  <span class="island__act" data-i="1"><span class="island__l"><span class="island__ic" style="--c:#1c1c1e"><i data-lucide="trending-up" style="color:#30d158"></i></span><b>1.22M</b></span><span class="island__r">impressions</span></span>
+                  <span class="island__act" data-i="2"><span class="island__l"><span class="island__ic" style="--c:#0866ff"><i data-lucide="megaphone"></i></span><b>1,149 leads</b></span><span class="island__r">₹288 each</span></span>
+                </span>
+                <span class="sbar__sys">
+                  <span class="sig" id="pSig"><i></i><i></i><i></i><i></i></span>
+                  <span class="net" id="pNet"><i data-lucide="wifi"></i></span>
+                  <span class="bat" id="pBat"><span class="bat__pct" id="pBatPct"></span><span class="bat__body"><span class="bat__fill" id="pBatFill"></span><i data-lucide="zap" class="bat__bolt"></i></span><span class="bat__cap"></span></span>
+                </span>
+              </div>
+              <div class="notifs" id="notifs">
+                <div class="notif"><span class="app__icon" style="--c:#4285f4"><i data-lucide="search"></i></span><span class="notif__t"><b>Google</b><span>#1 for "Best Property Advisor in Noida"</span></span><small>now</small></div>
+                <div class="notif"><span class="app__icon" style="--c:#111"><i data-lucide="chart-line" style="color:#30d158"></i></span><span class="notif__t"><b>Search Console</b><span>1.22M impressions in 6 months, up from 3.43k</span></span><small>now</small></div>
+                <div class="notif"><span class="app__icon" style="--c:#0866ff"><i data-lucide="megaphone"></i></span><span class="notif__t"><b>Meta Ads</b><span>1,149 property leads at ₹288 each</span></span><small>now</small></div>
+                <div class="notif"><span class="app__icon" style="--c:#5e5ce6"><i data-lucide="database"></i></span><span class="notif__t"><b>Matrix Acres CRM</b><span>300+ modules, built from scratch</span></span><small>now</small></div>
+                <a class="notif" href="https://wa.me/919518848804" target="_blank" rel="noopener"><span class="app__icon" style="--c:#25d366"><i data-lucide="message-circle"></i></span><span class="notif__t"><b>WhatsApp</b><span>Tap to chat with Anek about your project</span></span><small>now</small></a>
+              </div>
+              <div class="widgets">
+                <div class="wdg wdg--cal">
+                  <span class="wdg__day" id="pDay">SUNDAY</span>
+                  <span class="wdg__date" id="pDate">15</span>
+                  <span class="wdg__ev"><i></i><span><b>Google rankings</b><small>15 Nov · 2:51 PM</small></span></span>
+                  <span class="wdg__ev wdg__ev--2"><i></i><span><b>Site meetings</b><small>≈ 1 per 10 leads</small></span></span>
+                </div>
+                <a class="wdg wdg--rank" href="#rankings" aria-label="See Google rankings">
+                  <span class="wdg__head"><span class="wdg__g">G</span>Rankings</span>
+                  <b class="wdg__big">#1</b>
+                  <span class="wdg__sub">55 keywords on Google</span>
+                  <span class="wdg__kw" id="pKw">Best Property Advisor in Noida</span>
+                </a>
+              </div>
+              <div class="apps">
+                <button class="app" data-open="shubh"><span class="app__icon" style="--c:#b8913d"><i data-lucide="landmark"></i></span><span class="app__name">Shubharambh</span></button>
+                <button class="app" data-open="matrix"><span class="app__icon" style="--c:#1e2b3c"><i data-lucide="building-2"></i></span><span class="app__name">Matrix</span></button>
+                <button class="app" data-open="vision"><span class="app__icon" style="--c:#3d42d6"><i data-lucide="rocket"></i></span><span class="app__name">Visionwave</span></button>
+                <button class="app" data-open="lmc"><span class="app__icon" style="--c:#b3202b"><i data-lucide="leaf"></i></span><span class="app__name">LMC</span></button>
+                <button class="app" data-open="sabzi"><span class="app__icon" style="--c:#1f7a43"><i data-lucide="carrot"></i></span><span class="app__name">Hari Sabzi</span></button>
+                <button class="app" data-open="ezzy"><span class="app__icon" style="--c:#e3262e"><i data-lucide="shirt"></i></span><span class="app__name">Ezzy</span></button>
+                <button class="app" data-open="allfiles"><span class="app__icon" style="--c:#6d5dfc"><i data-lucide="cloud"></i></span><span class="app__name">AllFiles</span></button>
+                <a class="app" href="#rankings"><span class="app__icon" style="--c:#111"><i data-lucide="chart-line" style="color:#30d158"></i><span class="badge-n">55</span></span><span class="app__name">Results</span></a>
+              </div>
+              <a class="wdg wdg--wide" href="#results" aria-label="See SEO results">
+                <span class="wdg__wl"><span class="wdg__head"><i data-lucide="trending-up"></i>Search Console</span><b>1.22M</b><small>impressions · ↑ 355×</small></span>
+                <img class="wdg__chart" src="assets/img/seo/gsc-chart.webp" alt="" width="1390" height="325">
+              </a>
+              <a class="wdg wdg--wide wdg--meta" href="#ads" aria-label="See Meta Ads results">
+                <span class="wdg__wl"><span class="wdg__head"><i data-lucide="megaphone"></i>Meta Ads</span><b>1,149</b><small>property leads · ₹288 each</small></span>
+                <span class="wdg__mini"><span><small>Spend</small><b>₹3.30L</b></span><span><small>Meetings</small><b>≈ 115</b></span></span>
+              </a>
+              <div class="psearch" aria-hidden="true"><i data-lucide="search"></i>Search</div>
+              <div class="phone__dock">
+                <a href="tel:+919518848804" aria-label="Call"><span class="app__icon" style="--c:#30b257"><i data-lucide="phone"></i></span></a>
+                <a href="https://wa.me/919518848804" target="_blank" rel="noopener" aria-label="WhatsApp"><span class="app__icon" style="--c:#25d366"><i data-lucide="message-circle"></i></span></a>
+                <a href="mailto:anekkumar9518@gmail.com" aria-label="Email"><span class="app__icon" style="--c:#1a82fb"><i data-lucide="mail"></i></span></a>
+                <a href="https://github.com/Anekkumar9518" target="_blank" rel="noopener" aria-label="GitHub"><span class="app__icon" style="--c:#24292f"><i data-lucide="github"></i></span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="note note--phone reveal" aria-hidden="true"><span>tap an app to open<br>that project</span><svg class="note__arrow" viewBox="0 0 120 90" aria-hidden="true"><path d="M8 12c26-6 58 2 76 22s20 34 18 48"/><path d="M88 70l14 14 10-17"/></svg></p>
+      </div>
+    </section>
+
+    <!-- ================= TICKER ================= -->
+    <section class="ticker" aria-label="Projects I've run ads for, and skills">
+      <p class="ticker__label wrap">Ad campaigns I've run for projects by</p>
+      <div class="ticker__row">
+        <div class="ticker__track">
+          <span>Godrej</span><span>M3M</span><span>Bhutani</span><span>Gaur</span><span>ACE</span><span>Smartworld</span><span>Prestige</span><span>Jacob &amp; Co.</span>
+          <span aria-hidden="true">Godrej</span><span aria-hidden="true">M3M</span><span aria-hidden="true">Bhutani</span><span aria-hidden="true">Gaur</span><span aria-hidden="true">ACE</span><span aria-hidden="true">Smartworld</span><span aria-hidden="true">Prestige</span><span aria-hidden="true">Jacob &amp; Co.</span>
+        </div>
+      </div>
+      <div class="ticker__row ticker__row--rev">
+        <div class="ticker__track">
+          <span class="chip"><i data-lucide="search"></i>SEO</span><span class="chip"><i data-lucide="megaphone"></i>Meta Ads</span><span class="chip"><i data-lucide="mouse-pointer-click"></i>Google Ads</span><span class="chip"><i data-lucide="code-xml"></i>Django</span><span class="chip"><i data-lucide="braces"></i>PHP</span><span class="chip"><i data-lucide="database"></i>MySQL</span><span class="chip"><i data-lucide="atom"></i>React</span><span class="chip"><i data-lucide="server"></i>Node.js</span><span class="chip"><i data-lucide="radar"></i>Conversion API</span><span class="chip"><i data-lucide="message-circle"></i>WhatsApp API</span><span class="chip"><i data-lucide="chart-line"></i>GA4</span><span class="chip"><i data-lucide="users"></i>CRM</span>
+          <span class="chip" aria-hidden="true"><i data-lucide="search"></i>SEO</span><span class="chip" aria-hidden="true"><i data-lucide="megaphone"></i>Meta Ads</span><span class="chip" aria-hidden="true"><i data-lucide="mouse-pointer-click"></i>Google Ads</span><span class="chip" aria-hidden="true"><i data-lucide="code-xml"></i>Django</span><span class="chip" aria-hidden="true"><i data-lucide="braces"></i>PHP</span><span class="chip" aria-hidden="true"><i data-lucide="database"></i>MySQL</span><span class="chip" aria-hidden="true"><i data-lucide="atom"></i>React</span><span class="chip" aria-hidden="true"><i data-lucide="server"></i>Node.js</span><span class="chip" aria-hidden="true"><i data-lucide="radar"></i>Conversion API</span><span class="chip" aria-hidden="true"><i data-lucide="message-circle"></i>WhatsApp API</span><span class="chip" aria-hidden="true"><i data-lucide="chart-line"></i>GA4</span><span class="chip" aria-hidden="true"><i data-lucide="users"></i>CRM</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= AT A GLANCE (bento) ================= -->
+    <section class="sec" id="about" aria-labelledby="about-t">
+      <div class="wrap">
+        <div class="idx"><b>01</b><span>At a glance</span><span class="idx__r">3+ years · Noida</span></div>
+        <h2 class="sec__title hl" id="about-t" data-hl>One person. Builds the site, ranks it on Google, and brings the customers.</h2>
+
+        <div class="bento">
+          <article class="tile tile--wide tile--dark reveal">
+            <i data-lucide="code-xml" class="tile__wm" aria-hidden="true"></i>
+            <span class="tile__icon"><i data-lucide="user-round"></i></span>
+            <h3>Developer who also runs the marketing</h3>
+            <p>Most businesses hire a developer for the website and then an agency for traffic. I do both. I write the backend in <b>Python (Django)</b> or <b>PHP with MySQL</b>, set up Meta Pixel and Conversion API tracking, and run the campaigns that fill the CRM with leads.</p>
+          </article>
+
+          <article class="tile tile--chart tile--green reveal">
+            <i data-lucide="trending-up" class="tile__wm" aria-hidden="true"></i>
+            <span class="tile__icon"><i data-lucide="search"></i></span>
+            <p class="tile__big" data-to="1.22" data-dec="2" data-suf="M">1.22M</p>
+            <p class="tile__label">Google impressions in 6 months, up from 3.43k</p>
+            <img src="assets/img/seo/gsc-chart.webp" alt="Real Search Console chart" width="1390" height="325" decoding="async" data-zoom>
+          </article>
+
+          <article class="tile tile--blue reveal">
+            <i data-lucide="megaphone" class="tile__wm" aria-hidden="true"></i>
+            <span class="tile__icon"><i data-lucide="megaphone"></i></span>
+            <p class="tile__big" data-to="10" data-pre="₹" data-suf="L+">₹10L+</p>
+            <p class="tile__label">Ad spend on Meta &amp; Google at Matrix Acres, for projects by</p>
+            <ul class="brands"><li>Godrej</li><li>M3M</li><li>Bhutani</li><li>Gaur</li><li>ACE</li><li>Smartworld</li><li>Prestige</li><li>Jacob &amp; Co.</li></ul>
+          </article>
+
+          <article class="tile tile--purple reveal">
+            <i data-lucide="database" class="tile__wm" aria-hidden="true"></i>
+            <span class="tile__icon"><i data-lucide="database"></i></span>
+            <p class="tile__big" data-to="300" data-suf="+">300+</p>
+            <p class="tile__label">Modules in a real estate CRM I built from scratch</p>
+          </article>
+
+          <article class="tile tile--orange reveal">
+            <i data-lucide="briefcase" class="tile__wm" aria-hidden="true"></i>
+            <span class="tile__icon"><i data-lucide="briefcase"></i></span>
+            <p class="tile__big" data-to="3" data-suf="+ yrs">3+ yrs</p>
+            <ol class="mini-tl">
+              <li><b>Shubharambh Infra</b><span>2026 – now</span></li>
+              <li><b>Matrix Acres</b><span>2024 – 26</span></li>
+              <li><b>Ryoto Electrix</b><span>2024</span></li>
+              <li><b>Xaas Technologies</b><span>2023</span></li>
+            </ol>
+          </article>
+
+          <article class="tile tile--teal reveal">
+            <i data-lucide="map-pinned" class="tile__wm" aria-hidden="true"></i>
+            <span class="tile__icon"><i data-lucide="map-pin"></i></span>
+            <p class="tile__big tile__big--sm">Noida, India</p>
+            <p class="tile__label">Full-time at Shubharambh Infra Advisors. I take on freelance projects alongside, remote or in Delhi NCR.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= WORK ================= -->
+    <section class="sec" id="work" aria-labelledby="work-t">
+      <div class="wrap">
+        <div class="idx"><b>02</b><span>Selected work</span><span class="idx__r">8 live projects</span></div>
+        <div class="sec__row">
+          <h2 class="sec__title" id="work-t">Work. <span class="dim">Eight live projects, real screenshots.</span></h2>
+          <p class="note note--work reveal" aria-hidden="true"><span>all 8 are live.<br>tap "Details"</span><svg class="note__arrow" viewBox="0 0 70 100" aria-hidden="true"><path d="M30 6c-14 22 18 36 4 60-3 6-6 12-6 26"/><path d="M16 80l12 14 12-14"/></svg></p>
+          <div class="gal-nav">
+            <button class="round" id="galPrev" aria-label="Previous project"><i data-lucide="chevron-left"></i></button>
+            <button class="round" id="galNext" aria-label="Next project"><i data-lucide="chevron-right"></i></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery" id="gallery" tabindex="0" aria-label="Projects, scroll sideways">
+        <!-- card template: icon, name, devices, actions -->
+        <article class="card" data-id="shubh" style="--c:#b8913d">
+          <div class="card__media">
+            <div class="mini-laptop"><img src="assets/img/projects/shubharambh.webp" alt="Shubharambh Infra Advisors on desktop" width="1200" height="675" loading="lazy"></div>
+            <div class="mini-phone"><img src="assets/img/projects/shubharambh-m.webp" alt="Shubharambh Infra Advisors on mobile" width="390" height="844" loading="lazy"></div>
+          </div>
+          <div class="card__body">
+            <span class="app__icon" style="--c:#b8913d"><i data-lucide="landmark"></i></span>
+            <div class="card__text"><h3>Shubharambh Infra Advisors</h3><p><b class="up">Current job</b> · Website, SEO and Meta lead campaigns</p></div>
+          </div>
+          <div class="card__actions">
+            <button class="btn btn--gray btn--sm" data-open="shubh">Details</button>
+            <a class="link" href="https://shubharambhinfraadvisors.com" target="_blank" rel="noopener">Visit site<i data-lucide="arrow-up-right"></i></a>
+          </div>
+        </article>
+
+        <article class="card" data-id="matrix" style="--c:#1e2b3c">
+          <div class="card__media">
+            <div class="mini-laptop"><img src="assets/img/projects/matrixacres.webp" alt="Matrix Acres website on desktop" width="1200" height="675" loading="lazy"></div>
+            <div class="mini-phone"><img src="assets/img/projects/matrixacres-m.webp" alt="Matrix Acres website on mobile" width="390" height="844" loading="lazy"></div>
+          </div>
+          <div class="card__body">
+            <span class="app__icon" style="--c:#1e2b3c"><i data-lucide="building-2"></i></span>
+            <div class="card__text"><h3>Matrix Acres</h3><p>Real estate website, CRM and lead campaigns</p></div>
+          </div>
+          <div class="card__actions">
+            <button class="btn btn--gray btn--sm" data-open="matrix">Details</button>
+            <a class="link" href="https://www.matrixacres.in" target="_blank" rel="noopener">Visit site<i data-lucide="arrow-up-right"></i></a>
+          </div>
+        </article>
+
+        <article class="card" data-id="vision" style="--c:#3d42d6">
+          <div class="card__media">
+            <div class="mini-laptop"><img src="assets/img/projects/visionwave-tools.webp" alt="Visionwave Technology tools page on desktop" width="1200" height="675" loading="lazy"></div>
+            <div class="mini-phone"><img src="assets/img/projects/visionwave-m.webp" alt="Visionwave Technology on mobile" width="390" height="844" loading="lazy"></div>
+          </div>
+          <div class="card__body">
+            <span class="app__icon" style="--c:#3d42d6"><i data-lucide="rocket"></i></span>
+            <div class="card__text"><h3>Visionwave Technology</h3><p>Agency website with 29 free tools</p></div>
+          </div>
+          <div class="card__actions">
+            <button class="btn btn--gray btn--sm" data-open="vision">Details</button>
+            <a class="link" href="https://visionwavetechnology.com" target="_blank" rel="noopener">Visit site<i data-lucide="arrow-up-right"></i></a>
+          </div>
+        </article>
+
+        <article class="card" data-id="lmc" style="--c:#b3202b">
+          <div class="card__media">
+            <div class="mini-laptop"><img src="assets/img/projects/lmc.webp" alt="LMC Healthcare store on desktop" width="1200" height="675" loading="lazy"></div>
+            <div class="mini-phone"><img src="assets/img/projects/lmc-m.webp" alt="LMC Healthcare store on mobile" width="390" height="844" loading="lazy"></div>
+          </div>
+          <div class="card__body">
+            <span class="app__icon" style="--c:#b3202b"><i data-lucide="leaf"></i></span>
+            <div class="card__text"><h3>LMC Healthcare Store</h3><p>Ayurvedic wellness e-commerce</p></div>
+          </div>
+          <div class="card__actions">
+            <button class="btn btn--gray btn--sm" data-open="lmc">Details</button>
+            <a class="link" href="https://lmcstore.in/" target="_blank" rel="noopener">Visit site<i data-lucide="arrow-up-right"></i></a>
+          </div>
+        </article>
+
+        <article class="card" data-id="sabzi" style="--c:#1f7a43">
+          <div class="card__media">
+            <div class="mini-laptop"><img src="assets/img/projects/harisabzi.webp" alt="Hari Sabzi Wala on desktop" width="1200" height="675" loading="lazy"></div>
+            <div class="mini-phone"><img src="assets/img/projects/harisabzi-m.webp" alt="Hari Sabzi Wala on mobile" width="390" height="844" loading="lazy"></div>
+          </div>
+          <div class="card__body">
+            <span class="app__icon" style="--c:#1f7a43"><i data-lucide="carrot"></i></span>
+            <div class="card__text"><h3>Hari Sabzi Wala</h3><p>Grocery delivery website + rider app</p></div>
+          </div>
+          <div class="card__actions">
+            <button class="btn btn--gray btn--sm" data-open="sabzi">Details</button>
+            <a class="link" href="https://harisabziwala.com" target="_blank" rel="noopener">Visit site<i data-lucide="arrow-up-right"></i></a>
+          </div>
+        </article>
+
+        <article class="card" data-id="ezzy" style="--c:#e3262e">
+          <div class="card__media">
+            <div class="mini-laptop"><img src="assets/img/projects/ezzy.webp" alt="EzzyCommerce store on desktop" width="1200" height="675" loading="lazy"></div>
+            <div class="mini-phone"><img src="assets/img/projects/ezzy-m.webp" alt="EzzyCommerce store on mobile" width="390" height="844" loading="lazy"></div>
+          </div>
+          <div class="card__body">
+            <span class="app__icon" style="--c:#e3262e"><i data-lucide="shirt"></i></span>
+            <div class="card__text"><h3>EzzyCommerce Store</h3><p>Streetwear fashion e-commerce</p></div>
+          </div>
+          <div class="card__actions">
+            <button class="btn btn--gray btn--sm" data-open="ezzy">Details</button>
+            <a class="link" href="https://ezzycommerce.store/" target="_blank" rel="noopener">Visit site<i data-lucide="arrow-up-right"></i></a>
+          </div>
+        </article>
+
+        <article class="card" data-id="allfiles" style="--c:#6d5dfc">
+          <div class="card__media">
+            <div class="mini-laptop"><img src="assets/img/projects/allfiles.webp" alt="AllFiles cloud storage on desktop" width="1200" height="675" loading="lazy"></div>
+            <div class="mini-phone"><img src="assets/img/projects/allfiles-m.webp" alt="AllFiles on mobile" width="390" height="844" loading="lazy"></div>
+          </div>
+          <div class="card__body">
+            <span class="app__icon" style="--c:#6d5dfc"><i data-lucide="cloud"></i></span>
+            <div class="card__text"><h3>AllFiles</h3><p>Private cloud storage + free tools</p></div>
+          </div>
+          <div class="card__actions">
+            <button class="btn btn--gray btn--sm" data-open="allfiles">Details</button>
+            <a class="link" href="https://allfiles.space" target="_blank" rel="noopener">Visit site<i data-lucide="arrow-up-right"></i></a>
+          </div>
+        </article>
+        <article class="card" data-id="devtab" style="--c:#7c9cff">
+          <div class="card__media">
+            <div class="mini-laptop"><img src="assets/img/projects/devtab.webp" alt="DevTab, a new tab page for Chrome, on desktop" width="1200" height="675" loading="lazy"></div>
+            <div class="mini-phone"><img src="assets/img/projects/devtab-m.webp" alt="DevTab demo on mobile" width="390" height="844" loading="lazy"></div>
+          </div>
+          <div class="card__body">
+            <span class="app__icon" style="--c:#7c9cff"><i data-lucide="app-window"></i></span>
+            <div class="card__text"><h3>DevTab</h3><p>Open-source Chrome extension</p></div>
+          </div>
+          <div class="card__actions">
+            <button class="btn btn--gray btn--sm" data-open="devtab">Details</button>
+            <a class="link" href="https://github.com/Anekkumar9518/devtab" target="_blank" rel="noopener">GitHub<i data-lucide="arrow-up-right"></i></a>
+          </div>
+        </article>
+      </div>
+
+      <!-- Test drive: AK Phone, an Android-style phone simulator (assets/js/android.js) -->
+      <div class="wrap">
+        <div class="droid-demo" id="testdrive">
+          <div class="droid-demo__copy">
+            <h3 class="droid-demo__title">A phone that actually works.</h3>
+            <p class="droid-demo__lead">I built a full Android-style phone in HTML, CSS and JavaScript. Ask the voice assistant about me, install games from the Store, record a voice note, translate, draw, check live exchange rates, scan my QR code, or browse the real web. It's open source: <a href="https://github.com/Anekkumar9518/ak-phone" target="_blank" rel="noopener">see the code on GitHub</a>.</p>
+            <div class="droid-try">
+              <button type="button" class="droid-try__btn droid-try__btn--main" data-droid-search="best property advisor in noida"><i data-lucide="search" aria-hidden="true"></i><span><b>Search Google live</b><small>"best property advisor in noida"</small></span></button>
+              <button type="button" class="droid-try__btn" data-droid-app="store"><i data-lucide="shopping-bag" aria-hidden="true"></i><span><b>Install a game</b><small>Store · 9 games</small></span></button>
+              <button type="button" class="droid-try__btn" data-droid-open="shubh"><i data-lucide="landmark" aria-hidden="true"></i><span><b>Open my websites</b><small>As customers see them on a phone</small></span></button>
+              <button type="button" class="droid-try__btn" data-droid-app="assistant"><i data-lucide="mic" aria-hidden="true"></i><span><b>Ask the Assistant</b><small>"Who is Anek?"</small></span></button>
+              <button type="button" class="droid-try__btn" data-droid-app="qr"><i data-lucide="qr-code" aria-hidden="true"></i><span><b>Save my contact</b><small>QR code, scan with your phone</small></span></button>
+            </div>
+            <ul class="droid-demo__how">
+              <li><b>Unlock</b> swipe up or tap</li>
+              <li><b>Quick settings</b> swipe down from the top</li>
+              <li><b>All apps</b> swipe up on the home screen</li>
+              <li><b>Power menu</b> hold the power key</li>
+            </ul>
+            <p class="droid-demo__note"><i data-lucide="info" aria-hidden="true"></i>It's a simulator: real Android apps and Google Play can't run inside a website, so every app here is one I wrote. The browser is real. Some of my sites block being opened inside other websites, so those open as real mobile snapshots (16 Nov 2026) with a button to the live site.</p>
+          </div>
+
+          <div class="droid-wrap" id="droidWrap">
+            <div class="droid" id="droid" role="region" aria-label="AK Phone, a working phone simulator">
+              <button type="button" class="droid__key droid__key--power" aria-label="Power button"></button>
+              <button type="button" class="droid__key droid__key--up" aria-label="Volume up"></button>
+              <button type="button" class="droid__key droid__key--down" aria-label="Volume down"></button>
+              <div class="droid__screen" id="dScreen"><noscript><p class="droid__nojs">Turn on JavaScript to use the phone.</p></noscript></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="wrap">
+        <h3 class="list-title">Also built <span>Internal systems or offline, so no public link</span></h3>
+        <ul class="ilist reveal">
+          <li><span class="ilist__icon" style="--c:#5e5ce6"><i data-lucide="database"></i></span><div><b>Real estate CRM, 300+ modules</b><p>Leads, sales tracking, reports, dashboards and role-based access for Admin, Manager and User. PHP &amp; MySQL.</p></div></li>
+          <li><span class="ilist__icon" style="--c:#30b257"><i data-lucide="zap"></i></span><div><b>Ryoto Electrix, EV company website</b><p>Built in Django with vehicle and product management, plus dealership lead campaigns on Meta and Google.</p></div></li>
+          <li><span class="ilist__icon" style="--c:#ff9f0a"><i data-lucide="lock-keyhole"></i></span><div><b>File encryption &amp; license system</b><p>Server-side encryption, license-key validation over a remote API and a role-based dashboard. PHP.</p></div></li>
+          <li><span class="ilist__icon" style="--c:#25d366"><i data-lucide="message-circle"></i></span><div><b>WhatsApp lead follow-up</b><p>Leads from Meta and Google go into the CRM and get an instant WhatsApp reply, then are assigned to sales.</p></div></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ================= RESULTS (dark) ================= -->
+    <section class="results" id="results" aria-labelledby="results-t">
+      <div class="wrap">
+        <div class="idx"><b>03</b><span>SEO case study · Shubharambh Infra Advisors</span><span class="idx__r">Search Console · Nov 2026</span></div>
+        <h2 class="results__title" id="results-t"><span class="dim">3.43k</span> <i data-lucide="arrow-right" class="results__arrow" aria-hidden="true"></i> <span class="green" data-to="1.22" data-dec="2" data-suf="M">1.22M</span></h2>
+        <p class="results__sub">Google impressions in six months, from local SEO, project pages and free property tools. Every number here comes straight from Google Search Console.</p>
+
+        <dl class="rstats reveal">
+          <div><dt><i data-lucide="eye"></i>Impressions</dt><dd><span data-to="1.22" data-dec="2" data-suf="M">1.22M</span><small>355× in 6 months</small></dd></div>
+          <div><dt><i data-lucide="mouse-pointer-click"></i>Clicks</dt><dd><span data-to="1.8" data-dec="1" data-suf="k">1.8k</span><small>up from 355</small></dd></div>
+          <div><dt><i data-lucide="calendar-range"></i>Last 3 months</dt><dd><span data-to="1.08" data-dec="2" data-suf="M">1.08M</span><small>1.15k clicks</small></dd></div>
+          <div><dt><i data-lucide="clock"></i>Last 24 hours</dt><dd><span data-to="20.2" data-dec="1" data-suf="k">20.2k</span><small>15 clicks · 19 Nov 2026</small></dd></div>
+        </dl>
+
+        <div class="display reveal" id="display">
+          <div class="seg" role="tablist" aria-label="Search Console period">
+            <button role="tab" class="seg__btn is-active" aria-selected="true" data-img="assets/img/seo/gsc-6-months.webp" data-w="1400" data-h="797" data-alt="Search Console: last 6 months vs previous 6 months">6 months</button>
+            <button role="tab" class="seg__btn" aria-selected="false" data-img="assets/img/seo/gsc-3-months.webp" data-w="1400" data-h="733" data-alt="Search Console: last 3 months">3 months</button>
+            <button role="tab" class="seg__btn" aria-selected="false" data-img="assets/img/seo/gsc-28-days.webp" data-w="1400" data-h="736" data-alt="Search Console: last 28 days">28 days</button>
+            <button role="tab" class="seg__btn" aria-selected="false" data-img="assets/img/seo/gsc-24-hours.webp" data-w="1400" data-h="638" data-alt="Search Console: last 24 hours, hourly, 18 to 19 Nov 2026">24 hours</button>
+          </div>
+          <div class="display__screen">
+            <img id="proofImg" src="assets/img/seo/gsc-6-months.webp" alt="Search Console: last 6 months vs previous 6 months" width="1400" height="797" decoding="async" data-zoom>
+          </div>
+          <div class="display__stand" aria-hidden="true"></div>
+          <p class="display__cap"><i data-lucide="badge-check"></i>Unedited Google Search Console screenshots · 15 and 19 Nov 2026 · tap to enlarge</p>
+          <p class="note note--gsc reveal" aria-hidden="true"><svg class="note__arrow" viewBox="0 0 110 90" aria-hidden="true"><path d="M104 80C70 82 34 70 20 34c-3-8-4-14-4-24"/><path d="M4 24L16 8l14 14"/></svg><span>not edited. straight from<br>Google Search Console</span></p>
+        </div>
+
+        <div class="auth" id="authority">
+          <h3 class="results__h3">Authority &amp; backlinks <span>Semrush · India · 18 Nov 2026</span></h3>
+          <p class="auth__big"><span class="dim">0</span> <i data-lucide="arrow-right" class="results__arrow" aria-hidden="true"></i> <span class="green" data-to="3.8" data-dec="1" data-suf="K">3.8K</span> <small>keywords on Google in five months</small></p>
+          <dl class="rstats auth__stats">
+            <div><dt><i data-lucide="shield-check"></i>Authority Score</dt><dd><span>11</span><small>Semrush score</small></dd></div>
+            <div><dt><i data-lucide="key-round"></i>Organic keywords</dt><dd><span>3.8K</span><small>+19% this month</small></dd></div>
+            <div><dt><i data-lucide="trending-up"></i>Organic traffic</dt><dd><span>3.4K</span><small>a month · +15%</small></dd></div>
+            <div><dt><i data-lucide="globe"></i>Referring domains</dt><dd><span>2.3K</span><small>sites linking in</small></dd></div>
+            <div><dt><i data-lucide="link"></i>Backlinks</dt><dd><span>9.7K</span><small>5.36K follow links</small></dd></div>
+            <div><dt><i data-lucide="sparkles"></i>New backlinks</dt><dd><span>748</span><small>recently, 24 found today</small></dd></div>
+          </dl>
+          <div class="display auth__display" id="authDisplay">
+            <div class="seg" role="tablist" aria-label="Semrush screenshots">
+              <button role="tab" class="seg__btn is-active" aria-selected="true" data-img="assets/img/seo/semrush-growth.webp" data-w="1400" data-h="432" data-alt="Semrush: organic traffic and keywords, Dec 2025 to Nov 2026">Growth</button>
+              <button role="tab" class="seg__btn" aria-selected="false" data-img="assets/img/seo/semrush-keywords.webp" data-w="1035" data-h="446" data-alt="Semrush: organic keywords by position, Jan 2025 to Nov 2026">Keywords</button>
+              <button role="tab" class="seg__btn" aria-selected="false" data-img="assets/img/seo/semrush-overview.webp" data-w="960" data-h="276" data-alt="Semrush domain overview: Authority Score 11, 3.4K traffic, 3.8K keywords, 2.3K referring domains, 9.7K backlinks">Overview</button>
+              <button role="tab" class="seg__btn" aria-selected="false" data-img="assets/img/seo/semrush-best-backlinks.webp" data-w="1400" data-h="721" data-alt="Semrush: best backlinks, follow links placed in content">Best links</button>
+              <button role="tab" class="seg__btn" aria-selected="false" data-img="assets/img/seo/semrush-follow.webp" data-w="510" data-h="607" data-alt="Semrush: 5.36K follow and 2.8K nofollow links, 90% text links">Link types</button>
+              <button role="tab" class="seg__btn" aria-selected="false" data-img="assets/img/seo/semrush-network.webp" data-w="1407" data-h="880" data-alt="Semrush network graph: no link farms, top categories of linking sites">Network</button>
+            </div>
+            <div class="display__screen">
+              <img id="authImg" src="assets/img/seo/semrush-growth.webp" alt="Semrush: organic traffic and keywords, Dec 2025 to Nov 2026" width="1400" height="432" decoding="async" data-zoom>
+            </div>
+            <p class="display__cap"><i data-lucide="badge-check"></i>Unedited Semrush screenshots · 18–19 Nov 2026 · Semrush figures are its own estimates · tap to enlarge</p>
+          </div>
+        </div>
+
+        <h3 class="results__h3">How the traffic came</h3>
+        <div class="how">
+          <article class="how__card reveal"><span class="how__icon"><i data-lucide="map-pin"></i></span><h4>Local SEO</h4><p>Pages built for searches like "best property advisor in Noida", now ranking #1.</p></article>
+          <article class="how__card reveal"><span class="how__icon"><i data-lucide="file-text"></i></span><h4>Project pages &amp; blog</h4><p>Pages for the projects and questions buyers actually search for.</p></article>
+          <article class="how__card reveal"><span class="how__icon"><i data-lucide="calculator"></i></span><h4>Free property tools</h4><p>EMI, loan eligibility and stamp-duty calculators, plus area and length converters for buyers.</p></article>
+          <article class="how__card reveal"><span class="how__icon"><i data-lucide="gauge"></i></span><h4>Technical SEO</h4><p>Speed, schema, clean URLs, sitemaps and indexing.</p></article>
+        </div>
+
+        <div class="tools-shot reveal">
+          <img src="assets/img/projects/shubharambh-converters.webp" alt="The real converters page on shubharambhinfraadvisors.com" width="1200" height="675" loading="lazy" data-zoom>
+          <p><i data-lucide="link"></i>shubharambhinfraadvisors.com/converters, free property tools I built for the site</p>
+        </div>
+
+        <a class="btn btn--blue rk-jump" href="#rankings"><i data-lucide="trophy"></i>See the 55 keywords ranking #1 on Google</a>
+      </div>
+    </section>
+
+    <!-- RANKINGS:START -->
+    <!-- ================= GOOGLE RANKINGS (generated by tools/build_rankings.py) ================= -->
+    <section class="ranks" id="rankings" aria-labelledby="ranks-t">
+      <div class="ranks__glow" aria-hidden="true"></div>
+      <div class="wrap">
+        <div class="idx"><b>04</b><span>Google rankings · shubharambhinfraadvisors.com</span><span class="idx__r">Checked 15 and 19 Nov 2026</span></div>
+        <h2 class="ranks__title" id="ranks-t"><span class="ranks__one circled">#1<svg class="scribble-circle" viewBox="0 0 200 110" preserveAspectRatio="none" aria-hidden="true"><path d="M150 14C112 2 46 6 20 32 0 54 14 86 64 98c48 11 112 4 128-26 14-26-16-52-74-58-30-3-56 2-80 12"/></svg></span> on Google for <span class="ranks__n" data-to="55">55</span> keywords.</h2>
+        <p class="ranks__sub">60 keywords on page one, checked from Delhi NCR on 15 and 19 Nov 2026. Tap any keyword to search it on Google and see the live rank yourself.</p>
+
+        <div class="gsearch reveal" aria-hidden="true" data-q='[&quot;Best Property Advisor in Noida&quot;, &quot;property advisor in noida&quot;, &quot;Real Estate Consultant in Noida RERA-Registered Advisory&quot;, &quot;Grade-A Office Spaces in Noida, Focusing on Max Towers, Sector 16B&quot;, &quot;Commercial Property Investment in Noida (Office, Retail, SCO)&quot;, &quot;Flats in Noida by Sector Complete Directory&quot;, &quot;New Commercial Property for Sale in Noida for 2026&quot;, &quot;How to Hire a Trusted Real Estate Advisor and Property Dealer in Noida &amp; NCR?&quot;, &quot;Noida&#x27;s Most Exclusive Luxury Flats In Sector 94&quot;, &quot;Top Residential Projects with Premium Amenities in Haridwar&quot;, &quot;Investing in Furnished Studio Apartments as Holiday Homes near Jim Corbett&quot;, &quot;Living in Noida Sectors 121, 122, and 137: 3 BHK Options &amp; Infrastructure&quot;, &quot;3 BHK Options and Infrastructure in Noida Sectors 121, 122 and 137&quot;, &quot;Yamuna Expressway Property Hub For Spacious 3 BHK Flats, Sector 22D And Duplex Penthouses&quot;, &quot;Buy Flats in Noida: Best Sectors, Budgets, and Ready-to-Move Options&quot;, &quot;Buy Property in Haridwar: Best Localities for Homes, Plots, and Investment&quot;, &quot;The Luxury Residential Influx of Top 3 BHK and 4 BHK Apartments to Watch on Dwarka Expressway&quot;, &quot;Corporate Office Spaces for Sale across Sectors 60 and 63 and Phase 2 Dynamics in Noida&quot;, &quot;Premium Living on the Banks of the Holy River Ganges&quot;, &quot;Discovering Residential Plots And Homestay Potential Near Jim Corbett Highway&quot;, &quot;Top 7 Commercial Projects in Haridwar&quot;, &quot;Metro-Facing &amp; High Rental Yield Retail Shops in Noida Sectors 72 and 110&quot;, &quot;Top Premium Residential Property in Haridwar&quot;, &quot;Devika Vibe Panache Bazaar&quot;, &quot;Leading Real Estate Consultants in Haridwar: Your 2026 Investment Guide&quot;, &quot;Noida Property Buyer&#x27;s Guide: RERA, Stamp Duty, Loans &amp; Legal&quot;, &quot;How to Safely Buy a Home in India with Expert Tips and RERA Guidelines?&quot;, &quot;Finding High-ROI Properties with Market Metrics&quot;, &quot;4 Steps to Buying a Home in 2026&quot;, &quot;5 Crucial Clauses You Must Include in the Home Buying Process&quot;]'>
+          <div class="gsearch__bar"><span class="gsearch__logo"><b>G</b></span><span class="gsearch__q" id="gq">Best Property Advisor in Noida</span><span class="gsearch__caret"></span><i data-lucide="search"></i></div>
+          <div class="gsearch__res" id="gres">
+            <span class="gsearch__pos">#1</span>
+            <div class="gsearch__txt"><small>Shubharambh Infra Advisors</small><b>shubharambhinfraadvisors.com</b></div>
+            <span class="gsearch__live"><i></i>Ranked #1 · 19 Nov 2026</span>
+          </div>
+        </div>
+
+        <ul class="rk-stats">
+          <li class="reveal"><b>55</b><span>keywords at #1</span></li>
+          <li class="reveal"><b>60</b><span>keywords on page one</span></li>
+          <li class="reveal"><b>65</b><span>sites ranked below, incl. IBEF, CBRE &amp; 99acres</span></li>
+        </ul>
+
+        <div class="rk-above reveal"><span class="rk-above__label">Ranked above these sites</span><ul><li>IBEF</li><li>Justdial</li><li>Delhi Tourism</li><li>Invest UP (UP Govt)</li><li>CBRE</li><li>Times of India</li><li>Grant Thornton</li><li>Max Estates</li><li>Mahindra Lifespaces</li><li>M3M India</li><li>Kotak Bank</li><li>99acres</li><li>Investopedia</li><li>Birla Estates</li><li>Utkarsh Small Finance Bank</li><li>MoneyTree Realty</li><li>Propshop</li><li>Realty Assistant</li><li>Investors Clinic</li><li>Wealth Clinic</li><li>InvestoXpert</li><li>Propseekers Realty</li><li>IndiProp</li><li>BRP Realty</li><li>Sarthak Estates</li><li>So City</li><li>Workians Realty</li><li>PropMart</li><li>Opulence Abodez Realty</li><li>Noida Homes</li><li>MagicBricks</li><li>NoBroker</li><li>ATS Greens</li><li>Prateek Group</li><li>Nirvaana Greens</li><li>Premier Property</li><li>Accurate Realty</li><li>The Royal Ganges</li><li>ETH Infra</li><li>Global Birth Developers</li><li>RealEstateIndia</li><li>Golden Avenue</li><li>Devika Vibe 110 (project site)</li><li>Scribd</li><li>Reddit</li><li>Superluxere</li><li>Ziuma</li><li>Truelite Estates</li><li>News18</li><li>TripAdvisor</li><li>Mordor Intelligence</li><li>NAREDCO</li><li>LinkedIn</li><li>Mores</li><li>Property Saraansh</li><li>Noida Realty Trends</li><li>VillaAdda</li><li>Sigma Galleria</li><li>Optimal Realty</li><li>TREVOC Group</li><li>MK Property Advisor</li><li>River Valley Township</li><li>UnitJuggler</li><li>Kyle&#x27;s Converter</li><li>EasyCalculation</li></ul></div>
+
+        <p class="note note--rk reveal" aria-hidden="true"><span>even above IBEF, CBRE and<br>the UP Government's own site</span><svg class="note__arrow" viewBox="0 0 70 100" aria-hidden="true"><path d="M30 6c-14 22 18 36 4 60-3 6-6 12-6 26"/><path d="M16 80l12 14 12-14"/></svg></p>
+        <div class="rk-head">
+          <h3>All ranking keywords <span>Highest-value keywords first</span></h3>
+          <div class="seg seg--light rk-filters" role="tablist" aria-label="Filter keywords"><button role="tab" class="seg__btn rk-tab is-active" aria-selected="true" data-f="all">All 60</button><button role="tab" class="seg__btn rk-tab" aria-selected="false" data-f="money">Buyer searches 28</button><button role="tab" class="seg__btn rk-tab" aria-selected="false" data-f="brands">Home-buying guides 6</button><button role="tab" class="seg__btn rk-tab" aria-selected="false" data-f="insights">Market insights 24</button><button role="tab" class="seg__btn rk-tab" aria-selected="false" data-f="tools">Free tools 1</button><button role="tab" class="seg__btn rk-tab" aria-selected="false" data-f="brand">Brand 1</button></div>
+        </div>
+
+        <ol class="rk-list" id="rkList">
+          <li class="rk" data-cat="money">
+            <span class="rk__pos rk__pos--1" aria-label="Rank 1"><small>#</small>1</span>
+            <div class="rk__main">
+              <a class="rk__kw" href="https://www.google.com/search?q=Best+Property+Advisor+in+Noida" target="_blank" rel="noopener" title="Search this on Google now"><i data-lucide="search" aria-hidden="true"></i><span>Best Property Advisor in Noida</span><i data-lucide="arrow-up-right" class="rk__go" aria-hidden="true"></i></a>
+              <p class="rk__meta"><span class="rk__tag rk__tag--money">Buyer search</span><span class="rk__above"><i data-lucide="trending-up" aria-hidden="true"></i>Above MoneyTree Realty, Propshop, Workians Realty</span><time>15 Nov 2026 · 2:51 PM</time></p>
+            </div>
+            <button class="rk__proof" type="button" aria-label="Open the Google screenshot for Best Property Advisor in Noida"><img src="assets/img/rank/serp-11.webp" alt="Google results for &quot;Best Property Advisor in Noida&quot; showing Shubharambh Infra Advisors at #1, 15 Nov 2026 2:51 PM" width="1400" height="787" loading="lazy" data-zoom><span>Proof</span></button>
+          </li>
+          <li class="rk" data-cat="money">
+            <span class="rk__pos rk__pos--1" aria-label="Rank 1"><small>#</small>1</span>
+            <div class="rk__main">
+              <a class="rk__kw" href="https://www.google.com/search?q=property+advisor+in+noida" target="_blank" rel="noopener" title="Search this on Google now"><i data-lucide="search" aria-hidden="true"></i><span>property advisor in noida</span><i data-lucide="arrow-up-right" class="rk__go" aria-hidden="true"></i></a>
+              <p class="rk__meta"><span class="rk__tag rk__tag--money">Buyer search</span><span class="rk__above"><i data-lucide="trending-up" aria-hidden="true"></i>Above Justdial, Workians Realty, Wealth Clinic, PropMart, Opulence Abodez Realty</span><span class="rk__note">A short buyer search, and it beats Justdial</span><time>19 Nov 2026 · 4:28 PM</time></p>
+            </div>
+            <button class="rk__proof" type="button" aria-label="Open the Google screenshot for property advisor in noida"><img src="assets/img/rank/serp-69.webp" alt="Google results for &quot;property advisor in noida&quot; showing Shubharambh Infra Advisors at #1, 19 Nov 2026 4:28 PM" width="799" height="494" loading="lazy" data-zoom><span>Proof</span></button>
+          </li>
+          <li class="rk" data-cat="money">
+            <span class="rk__pos rk__pos--1" aria-label="Rank 1"><small>#</small>1</span>
+            <div class="rk__main">
+              <a class="rk__kw" href="https://www.google.com/search?q=Real+Estate+Consultant+in+Noida+RERA-Registered+Advisory" target="_blank" rel="noopener" title="Search this on Google now"><i data-lucide="search" aria-hidden="true"></i><span>Real Estate Consultant in Noida RERA-Registered Advisory</span><i data-lucide="arrow-up-right" class="rk__go" aria-hidden="true"></i></a>
+              <p class="rk__meta"><span class="rk__tag rk__tag--money">Buyer search</span><span class="rk__above"><i data-lucide="trending-up" aria-hidden="true"></i>Above Wealth Clinic, Opulence Abodez Realty</span><time>19 Nov 2026 · 2:30 PM</time></p>
+            </div>
+            <button class="rk__proof" type="button" aria-label="Open the Google screenshot for Real Estate Consultant in Noida RERA-Registered Advisory"><img src="assets/img/rank/serp-34.webp" alt="Google results for &quot;Real Estate Consultant in Noida RERA-Registered Advisory&quot; showing Shubharambh Infra Advisors at #1, 19 Nov 2026 2:30 PM" width="1400" height="757" loading="lazy" data-zoom><span>Proof</span></button>
+          </li>
+          <li class="rk" data-cat="money">
+            <span class="rk__pos rk__pos--1" aria-label="Rank 1"><small>#</small>1</span>
+            <div class="rk__main">
+              <a class="rk__kw" href="https://www.google.com/search?q=Grade-A+Office+Spaces+in+Noida%2C+Focusing+on+Max+Towers%2C+Sector+16B" target="_blank" rel="noopener" title="Search this on Google now"><i data-lucide="search" aria-hidden="true"></i><span>Grade-A Office Spaces in Noida, Focusing on Max Towers, Sector 16B</span><i data-lucide="arrow-up-right" class="rk__go" aria-hidden="true"></i></a>
+              <p class="rk__meta"><span class="rk__tag rk__tag--money">Buyer search</span><span class="rk__above"><i data-lucide="trending-up" aria-hidden="true"></i>Above Max Estates, CBRE</span><span class="rk__note">Above Max Estates&#x27; own website and CBRE</span><time>19 Nov 2026 · 3:51 PM</time></p>
+            </div>
+            <button class="rk__proof" type="button" aria-label="Open the Google screenshot for Grade-A Office Spaces in Noida, Focusing on Max Towers, Sector 16B"><img src="assets/img/rank/serp-46.webp" alt="Google results for &quot;Grade-A Office Spaces in Noida, Focusing on Max Towers, Sector 16B&quot; showing Shubharambh Infra Advisors at #1, 19 Nov 2026 3:51 PM" width="799" height="632" loading="lazy" data-zoom><span>Proof</span></button>
+          </li>
+          <li class="rk" data-cat="money">
+            <span class="rk__pos rk__pos--1" aria-label="Rank 1"><small>#</small>1</span>
+            <div class="rk__main">
+              <a class="rk__kw" href="https://www.google.com/search?q=Commercial+Property+Investment+in+Noida+%28Office%2C+Retail%2C+SCO%29" target="_blank" rel="noopener" title="Search this on Google now"><i data-lucide="search" aria-hidden="true"></i><span>Commercial Property Investment in Noida (Office, Retail, SCO)</span><i data-lucide="arrow-up-right" class="rk__go" aria-hidden="true"></i></a>
+              <p class="rk__meta"><span class="rk__tag rk__tag--money">Buyer search</span><span class="rk__above"><i data-lucide="trending-up" aria-hidden="true"></i>Above Propshop, BRP Realty</span><span class="rk__note">Named in Google&#x27;s AI Overview, and its top 2 sources</span><time>19 Nov 2026 · 2:29 PM</time></p>
+            </div>
+            <button class="rk__proof" type="button" aria-label="Open the Google screenshot for Commercial Property Investment in Noida (Office, Retail, SCO)"><img src="assets/img/rank/serp-33.webp" alt="Google results for &quot;Commercial Property Investment in Noida (Office, Retail, SCO)&quot; showing Shubharambh Infra Advisors at #1, 19 Nov 2026 2:29 PM" width="1400" height="787" loading="lazy" data-zoom><span>Proof</span></button>
+          </li>
+          <li class="rk" data-cat="money">
+            <span class="rk__pos rk__pos--1" aria-label="Rank 1"><small>#</small>1</span>
+            <div class="rk__main">
+              <a class="rk__kw" href="https://www.google.com/search?q=Flats+in+Noida+by+Sector+Complete+Directory" target="_blank" rel="noopener" title="Search this on Google now"><i data-lucide="search" aria-hidden="true"></i><span>Flats in Noida by Sector Complete Directory</span><i data-lucide="arrow-up-right" class="rk__go" aria-hidden="true"></i></a>
+              <p class="rk__meta"><span class="rk__tag rk__tag--money">Buyer search</span><span class="rk__above"><i data-lucide="trending-up" aria-hidden="true"></i>Above Noida Homes</span><time>19 Nov 2026 · 2:28 PM</time></p>
+            </div>
+            <button class="rk__proof" type="button" aria-label="Open the Google screenshot for Flats in Noida by Sector Complete Directory"><img src="assets/img/rank/serp-32.webp" alt="Google results for &quot;Flats in Noida by Sector Complete Directory&quot; showing Shubharambh Infra Advisors at #1, 19 Nov 2026 2:28 PM" width="1400" height="787" loading="lazy" data-zoom><span>Proof</span></button>
+          </li>
+          <li class="rk rk--more" data-cat="money">
+            <span class="rk__pos rk__pos--1" aria-label="Rank 1"><small>#</small>1</span>
+            <div class="rk__main">
+              <a class="rk__kw" href="https://www.google.com/search?q=New+Commercial+Property+for+Sale+in+Noida+for+2026" target="_blank" rel="noopener" title="Search this on Google now"><i data-lucide="search" aria-hidden="true"></i><span>New Commercial Property for Sale in Noida for 2026</span><i data-lucide="arrow-up-right" class="rk__go" aria-hidden="true"></i></a>
+              <p class="rk__meta"><span class="rk__tag rk__tag--money">Buyer search</span><span class="rk__above"><i data-lucide="trending-up" aria-hidden="true"></i>Above Propshop, 99acres, Sarthak Estates</span><time>15 Nov 2026 · 2:52 PM</time></p>
+            </div>
+            <button class="rk__proof" type="button" aria-label="Open the Google screenshot for New Commercial Property for Sale in Noida for 2026"><img src="assets/img/rank/serp-12.webp" alt="Google results for &quot;New Commercial Property for Sale in Noida for 2026&quot; showing Shubharambh Infra Advisors at #1, 15 Nov 2026 2:52 PM" width="1400" height="787" loading="lazy" data-zoom><span>Proof</span></button>
+          </li>
+          <li class="rk rk--more" data-cat="money">
+            <span class="rk__pos rk__pos--1" aria-label="Rank 1"><small>#</small>1</span>
+            <div class="rk__main">
+              <a class="rk__kw" href="https://www.google.com/search?q=How+to+Hire+a+Trusted+Real+Estate+Advisor+and+Property+Dealer+in+Noida+%26+NCR%3F" target="_blank" rel="noopener" title="Search this on Google now"><i data-lucide="search" aria-hidden="true"></i><span>How to Hire a Trusted Real Estate Advisor and Property Dealer in Noida &amp; NCR?</span><i data-lucide="arrow-up-right" class="rk__go" aria-hidden="true"></i></a>
+              <p class="rk__meta"><span class="rk__tag rk__tag--money">Buyer search</span><span class="rk__above"><i data-lucide="trending-up" aria-hidden="true"></i>Above MoneyTree Realty, Investors Clinic</span><time>15 Nov 2026 · 2:59 PM</time></p>
+            </div>
+            <button class="rk__proof" type="button" aria-label="Open the Google screenshot for How to Hire a Trusted Real Estate Advisor and Property Dealer in Noida &amp; NCR?"><img src="assets/img/rank/serp-26.webp" alt="Google results for &quot;How to Hire a Trusted Real Estate Advisor and Property Dealer in Noida &amp; NCR?&quot; showing Shubharambh Infra Advisors at #1, 15 Nov 2026 2:59 PM" width="1400" height="754" loading="lazy" data-zoom><span>Proof</span></button>
+          </li>
+          <li class="rk rk--more" data-cat="money">
+            <span class="rk__pos rk__pos--1" aria-label="Rank 1"><small>#</small>1</span>
+            <div class="rk__main">
+              <a class="rk__kw" href="https://www.google.com/search?q=Noida%27s+Most+Exclusive+Luxury+Flats+In+Sector+94" target="_blank" rel="noopener" title="Search this on Google now"><i data-lucide="search" aria-hidden="true"></i><span>Noida&#x27;s Most Exclusive Luxury Flats In Sector 94</span><i data-lucide="arrow-up-right" class="rk__go" aria-hidden="true"></i></a>
+              <p class="rk__meta"><span class="rk__tag rk__tag--money">Buyer search</span><span class="rk__above"><i data-lucide="trending-up" aria-hidden="true"></i>Above M3M India</span><time>15 Nov 2026 · 2:59 PM</time></p>
+            </div>
+            <button class="rk__proof" type="button" aria-label="Open the Google screenshot for Noida&#x27;s Most Exclusive Luxury Flats In Sector 94"><img src="assets/img/rank/serp-25.webp" alt="Google results for &quot;Noida&#x27;s Most Exclusive Luxury Flats In Sector 94&quot; showing Shubharambh Infra Advisors at #1, 15 Nov 2026 2:59 PM" width="1400" height="758" loading="lazy" data-zoom><span>Proof</span></button>
+          </li>
+          <li class="rk rk--more" data-cat="money">
+            <span class="rk__pos rk__pos--1" aria-label="Rank 1"><small>#</small>1</span>
+            <div class="rk__main">
+              <a class="rk__kw" href="https://www.google.com/search?q=Top+Residential+Projects+with+Premium+Amenities+in+Haridwar" target="_blank" rel="noopener" title="Search this on Google now"><i data-lucide="search" aria-hidden="true"></i><span>Top Residential Projects with Premium Amenities in Haridwar</span><i data-lucide="arrow-up-right" class="rk__go" aria-hidden="true"></i></a>
+              <p class="rk__meta"><span class="rk__tag rk__tag--money">Buyer search</span><span class="rk__above"><i data-lucide="trending-up" aria-hidden="true"></i>Above 99acres</span><time>15 Nov 2026 · 3:18 PM</time></p>
+            </div>
+            <button class="rk__proof" type="button" aria-label="Open the Google screenshot for Top Residential Projects with Premium Amenities in Haridwar"><img src="assets/img/rank/serp-30.webp" alt="Google results for &quot;Top Residential Projects with Premium Amenities in Haridwar&quot; showing Shubharambh Infra Advisors at #1, 15 Nov 2026 3:18 PM" width="1400" height="743" loading="lazy" data-zoom><span>Proof</span></button>
+          </li>
+          <li class="rk rk--more" data-cat="money">
+            <span class="rk__pos rk__pos--1" aria-label="Rank 1"><small>#</small>1</span>
+            <div class="rk__main">
+              <a class="rk__kw" href="https://www.google.com/search?q=Investing+in+Furnished+Studio+Apartments+as+Holiday+Homes+near+Jim+Corbett" target="_blank" rel="noopener" title="Search this on Google now"><i data-lucide="search" aria-hidden="true"></i><span>Investing in Furnished Studio Apartments as Holiday Homes near Jim Corbett</span><i data-lucide="arrow-up-right" class="rk__go" aria-hidden="true"></i></a>
+              <p class="rk__meta"><span class="rk__tag rk__tag--money">Buyer search</span><span class="rk__note">Holds #1 and #2, and is cited in Google&#x27;s AI Overview</span><time>15 Nov 2026 · 3:00 PM</time></p>
+            </div>
+            <button class="rk__proof" type="button" aria-label="Open the Google screenshot for Investing in Furnished Studio Apartments as Holiday Homes near Jim Corbett"><img src="assets/img/rank/serp-29.webp" alt="Google results for &quot;Investing in Furnished Studio Apartments as Holiday Homes near Jim Corbett&quot; showing Shubharambh Infra Advisors at #1, 15 Nov 2026 3:00 PM" width="1400" height="787" loading="lazy" data-zoom><span>Proof</span></button>
+          </li>
+          <li class="rk rk--more" data-cat="money">
+            <span class="rk__pos rk__pos--1" aria-label="Rank 1"><small>#</small>1</span>
+            <div class="rk__main">
+              <a class="rk__kw" href="https://www.google.com/search?q=Living+in+Noida+Sectors+121%2C+122%2C+and+137%3A+3+BHK+Options+%26+Infrastructure" target="_blank" rel="noopener" title="Search this on Google now"><i data-lucide="search" aria-hidden="true"></i><span>Living in Noida Sectors 121, 122, and 137: 3 BHK Options &amp; Infrastructure</span><i data-lucide="arrow-up-right" class="rk__go" aria-hidden="true"></i></a>
+              <p class="rk__meta"><span class="rk__tag rk__tag--money">Buyer search</span><span class="rk__above"><i data-lucide="trending-up" aria-hidden="true"></i>Above 99acres, MagicBricks</span><time>19 Nov 2026 · 3:47 PM</time></p>
+            </div>
+            <button class="rk__proof" type="button" aria-label="Open the Google screenshot for Living in Noida Sectors 121, 122, and 137: 3 BHK Options &amp; Infrastructure"><img src="assets/img/rank/serp-39.webp" alt="Google results for &quot;Living in Noida Sectors 121, 122, and 137: 3 BHK Options &amp; Infrastructure&quot; showing Shubharambh Infra Advisors at #1, 19 Nov 2026 3:47 PM" width="799" height="632" loading="lazy" data-zoom><span>Proof</span></button>
+          </li>
+          <li class="rk rk--more" data-cat="money">
+            <span class="rk__pos rk__pos--1" aria-label="Rank 1"><small>#</small>1</span>
+            <div class="rk__main">
+              <a class="rk__kw" href="https://www.google.com/search?q=3+BHK+Options+and+Infrastructure+in+Noida+Sectors+121%2C+122+and+137" target="_blank" rel="noopener" title="Search this on Google now"><i data-lucide="search" aria-hidden="true"></i><span>3 BHK Options and Infrastructure in Noida Sectors 121, 122 and 137</span><i data-lucide="arrow-up-right" class="rk__go" aria-hidden="true"></i></a>
+              <p class="rk__meta"><span class="rk__tag rk__tag--money">Buyer search</span><span class="rk__above"><i data-lucide="trending-up" aria-hidden="true"></i>Above 99acres, MagicBricks, NoBroker</span><time>19 Nov 2026 · 3:46 PM</time></p>
+            </div>
+            <button class="rk__proof" type="button" aria-label="Open the Google screenshot for 3 BHK Options and Infrastructure in Noida Sectors 121, 122 and 137"><img src="assets/img/rank/serp-40.webp" alt="Google results for &quot;3 BHK Options and Infrastructure in Noida Sectors 121, 122 and 137&quot; showing Shubharambh Infra Advisors at #1, 19 Nov 2026 3:46 PM" width="799" height="632" loading="lazy" data-zoom><span>Proof</span></button>
+          </li>
+          <li class="rk rk--more" data-cat="money">
+            <span class="rk__pos rk__pos--1" aria-label="Rank 1"><small>#</small>1</span>
+            <div class="rk__main">
+              <a class="rk__kw" href="https://www.google.com/search?q=Yamuna+Expressway+Property+Hub+For+Spacious+3+BHK+Flats%2C+Sector+22D+And+Duplex+Penthouses" target="_blank" rel="noopener" title="Search this on Google now"><i data-lucide="search" aria-hidden="true"></i><span>Yamuna Expressway Property Hub For Spacious 3 BHK Flats, Sector 22D And Duplex Penthouses</span><i data-lucide="arrow-up-right" class="rk__go" aria-hidden="true"></i></a>
+              <p class="rk__meta"><span class="rk__tag rk__tag--money">Buyer search</span><span class="rk__above"><i data-lucide="trending-up" aria-hidden="true"></i>Above 99acres, MagicBricks</span><time>19 Nov 2026 · 3:47 PM</time></p>
+            </div>
+            <button class="rk__proof" type="button" aria-label="Open the Google screenshot for Yamuna Expressway Property Hub For Spacious 3 BHK Flats, Sector 22D And Duplex Penthouses"><img src="assets/img/rank/serp-42.webp" alt="Google results for &quot;Yamuna Expressway Property Hub For Spacious 3 BHK Flats, Sector 22D And Duplex Penthouses&quot; showing Shubharambh Infra Advisors at #1, 19 Nov 2026 3:47 PM" width="799" height="632" loading="lazy" data-zoom><span>Proof</span></button>
+          </li>
+          <li class="rk rk--more" data-cat="money">
+            <span class="rk__pos rk__pos--1" aria-label="Rank 1"><small>#</small>1</span>
+            <div class="rk__main">
+              <a class="rk__kw" href="https://www.google.com/search?q=Buy+Flats+in+Noida%3A+Best+Sectors%2C+Budgets%2C+and+Ready-to-Move+Options" target="_blank" rel="noopener" title="Search this on Google now"><i data-lucide="search" aria-hidden="true"></i><span>Buy Flats in Noida: Best Sectors, Budgets, and Ready-to-Move Options</span><i data-lucide="arrow-up-right" class="rk__go" aria-hidden="true"></i></a>
+              <p class="rk__meta"><span class="rk__tag rk__tag--money">Buyer search</span><span class="rk__above"><i data-lucide="trending-up" aria-hidden="true"></i>Above ATS Greens, Prateek Group</span><time>19 Nov 2026 · 3:50 PM</time></p>
+            </div>
+            <button class="rk__proof" type="button" aria-label="Open the Google screenshot for Buy Flats in Noida: Best Sectors, Budgets, and Ready-to-Move Options"><img src="assets/img/rank/serp-43.webp" alt="Google results for &quot;Buy Flats in Noida: Best Sectors, Budgets, and Ready-to-Move Options&quot; showing Shubharambh Infra Advisors at #1, 19 Nov 2026 3:50 PM" width="799" height="632" loading="lazy" data-zoom><span>Proof</span></button>
+          </li>
+          <li class="rk rk--more" data-cat="money">
+            <span class="rk__pos rk__pos--1" aria-label="Rank 1"><small>#</small>1</span>
+            <div class="rk__main">
+              <a class="rk__kw" href="https://www.google.com/search?q=Buy+Property+in+Haridwar%3A+Best+Localities+for+Homes%2C+Plots%2C+and+Investment" target="_blank" rel="noopener" title="Search this on Google now"><i data-lucide="search" aria-hidden="true"></i><span>Buy Property in Haridwar: Best Localities for Homes, Plots, and Investment</span><i data-lucide="arrow-up-right" class="rk__go" aria-hidden="true"></i></a>
+              <p class="rk__meta"><span class="rk__tag rk__tag--money">Buyer search</span><span class="rk__above"><i data-lucide="trending-up" aria-hidden="true"></i>Above Nirvaana Greens, 99acres</span><time>19 Nov 2026 · 3:52 PM</time></p>
+            </div>
+            <button class="rk__proof" type="button" aria-label="Open the Google screenshot for Buy Property in Haridwar: Best Localities for Homes, Plots, and Investment"><img src="assets/img/rank/serp-48.webp" alt="Google results for &quot;Buy Property in Haridwar: Best Localities for Homes, Plots, and Investment&quot; showing Shubharambh Infra Advisors at #1, 19 Nov 2026 3:52 PM" width="799" height="632" loading="lazy" data-zoom><span>Proof</span></button>
+          </li>
+          <li class="rk rk--more" data-cat="money">
+            <span class="rk__pos rk__pos--1" aria-label="Rank 1"><small>#</small>1</span>
+            <div class="rk__main">
+              <a class="rk__kw" href="https://www.google.com/search?q=The+Luxury+Residential+Influx+of+Top+3+BHK+and+4+BHK+Apartments+to+Watch+on+Dwarka+Expressway" target="_blank" rel="noopener" title="Search this on Google now"><i data-lucide="search" aria-hidden="true"></i><span>The Luxury Residential Influx of Top 3 BHK and 4 BHK Apartments to Watch on Dwarka Expressway</span><i data-lucide="arrow-up-right" class="rk__go" aria-hidden="true"></i></a>
+              <p class="rk__meta"><span class="rk__tag rk__tag--money">Buyer search</span><span class="rk__above"><i data-lucide="trending-up" aria-hidden="true"></i>Above Premier Property, Accurate Realty</span><time>19 Nov 2026 · 3:55 PM</time></p>
+            </div>
+            <button class="rk__proof" type="button" aria-label="Open the Google screenshot for The Luxury Residential Influx of Top 3 BHK and 4 BHK Apartments to Watch on Dwarka Expressway"><img src="assets/img/rank/serp-52.webp" alt="Google results for &quot;The Luxury Residential Influx of Top 3 BHK and 4 BHK Apartments to Watch on Dwarka Expressway&quot; showing Shubharambh Infra Advisors at #1, 19 Nov 2026 3:55 PM" width="799" height="632" loading="lazy" data-zoom><span>Proof</span></button>
+          </li>
+          <li class="rk rk--more" data-cat="money">
+            <span class="rk__pos rk__pos--1" aria-label="Rank 1"><small>#</small>1</span>
+            <div class="rk__main">
+              <a class="rk__kw" href="https://www.google.com/search?q=Corporate+Office+Spaces+for+Sale+across+Sectors+60+and+63+and+Phase+2+Dynamics+in+Noida" target="_blank" rel="noopener" title="Search this on Google now"><i data-lucide="search" aria-hidden="true"></i><span>Corporate Office Spaces for Sale across Sectors 60 and 63 and Phase 2 Dynamics in Noida</span><i data-lucide="arrow-up-right" class="rk__go" aria-hidden="true"></i></a>
+              <p class="rk__meta"><span class="rk__tag rk__tag--money">Buyer search</span><span class="rk__above"><i data-lucide="trending-up" aria-hidden="true"></i>Above 99acres, MagicBricks, NoBroker</span><time>19 Nov 2026 · 3:56 PM</time></p>
+            </div>
+            <button class="rk__proof" type="button" aria-label="Open the Google screenshot for Corporate Office Spaces for Sale across Sectors 60 and 63 and Phase 2 Dynamics in Noida"><img src="assets/img/rank/serp-55.webp" alt="Google results for &quot;Corporate Office Spaces for Sale across Sectors 60 and 63 and Phase 2 Dynamics in Noida&quot; showing Shubharambh Infra Advisors at #1, 19 Nov 2026 3:56 PM" width="799" height="632" loading="lazy" data-zoom><span>Proof</span></button>
+          </li>
+          <li class="rk rk--more" data-cat="money">
+            <span class="rk__pos rk__pos--1" aria-label="Rank 1"><small>#</small>1</span>
+            <div class="rk__main">
+              <a class="rk__kw" href="https://www.google.com/search?q=Premium+Living+on+the+Banks+of+the+Holy+River+Ganges" target="_blank" rel="noopener" title="Search this on Google now"><i data-lucide="search" aria-hidden="true"></i><span>Premium Living on the Banks of the Holy River Ganges</span><i data-lucide="arrow-up-right" class="rk__go" aria-hidden="true"></i></a>
+              <p class="rk__meta"><span class="rk__tag rk__tag--money">Buyer search</span><span class="rk__above"><i data-lucide="trending-up" aria-hidden="true"></i>Above The Royal Ganges, ETH Infra</span><time>19 Nov 2026 · 3:57 PM</time></p>
+            </div>
+            <button class="rk__proof" type="button" aria-label="Open the Google screenshot for Premium Living on the Banks of the Holy River Ganges"><img src="assets/img/rank/serp-56.webp" alt="Google results for &quot;Premium Living on the Banks of the Holy River Ganges&quot; showing Shubharambh Infra Advisors at #1, 19 Nov 2026 3:57 PM" width="799" height="632" loading="lazy" data-zoom><span>Proof</span></button>
+          </li>
+          <li class="rk rk--more" data-cat="money">
+            <span class="rk__pos rk__pos--1" aria-label="Rank 1"><small>#</small>1</span>
+            <div class="rk__main">
+              <a class="rk__kw" href="https://www.google.com/search?q=Discovering+Residential+Plots+And+Homestay+Potential+Near+Jim+Corbett+Highway" target="_blank" rel="noopener" title="Search this on Google now"><i data-lucide="search" aria-hidden="true"></i><span>Discovering Residential Plots And Homestay Potential Near Jim Corbett Highway</span><i data-lucide="arrow-up-right" class="rk__go" aria-hidden="true"></i></a>
+              <p class="rk__meta"><span class="rk__tag rk__tag--money">Buyer search</span><span class="rk__above"><i data-lucide="trending-up" aria-hidden="true"></i>Above Global Birth Developers</span><time>19 Nov 2026 · 3:58 PM</time></p>
+            </div>
+            <button class="rk__proof" type="button" aria-label="Open the Google screenshot for Discovering Residential Plots And Homestay Potential Near Jim Corbett Highway"><img src="assets/img/rank/serp-58.webp" alt="Google results for &quot;Discovering Residential Plots And Homestay Potential Near Jim Corbett Highway&quot; showing Shubharambh Infra Advisors at #1, 19 Nov 2026 3:58 PM" width="799" height="632" loading="lazy" data-zoom><span>Proof</span></button>
+          </li>
+          <li class="rk rk--more" data-cat="money">
+            <span class="rk__pos rk__pos--1" aria-label="Rank 1"><small>#</small>1</span>
+            <div class="rk__main">
+              <a class="rk__kw" href="https://www.google.com/search?q=Top+7+Commercial+Projects+in+Haridwar" target="_blank" rel="noopener" title="Search this on Google now"><i data-lucide="search" aria-hidden="true"></i><span>Top 7 Commercial Projects in Haridwar</span><i data-lucide="arrow-up-right" class="rk__go" aria-hidden="true"></i></a>
+              <p class="rk__meta"><span class="rk__tag rk__tag--money">Buyer search</span><span class="rk__above"><i data-lucide="trending-up" aria-hidden="true"></i>Above 99acres, RealEstateIndia</span><time>19 Nov 2026 · 3:58 PM</time></p>
+            </div>
+            <button class="rk__proof" type="button" aria-label="Open the Google screenshot for Top 7 Commercial Projects in Haridwar"><img src="assets/img/rank/serp-59.webp" alt="Google results for &quot;Top 7 Commercial Projects in Haridwar&quot; showing Shubharambh Infra Advisors at #1, 19 Nov 2026 3:58 PM" width="799" height="632" loading="lazy" data-zoom><span>Proof</span></button>
+          </li>
+          <li class="rk rk--more" data-cat="money">
+            <span class="rk__pos rk__pos--1" aria-label="Rank 1"><small>#</small>1</span>
+            <div class="rk__main">
+              <a class="rk__kw" href="https://www.google.com/search?q=Metro-Facing+%26+High+Rental+Yield+Retail+Shops+in+Noida+Sectors+72+and+110" target="_blank" rel="noopener" title="Search this on Google now"><i data-lucide="search" aria-hidden="true"></i><span>Metro-Facing &amp; High Rental Yield Retail Shops in Noida Sectors 72 and 110</span><i data-lucide="arrow-up-right" class="rk__go" aria-hidden="true"></i></a>
+              <p class="rk__meta"><span class="rk__tag rk__tag--money">Buyer search</span><span class="rk__above"><i data-lucide="trending-up" aria-hidden="true"></i>Above 99acres</span><time>19 Nov 2026 · 3:59 PM</time></p>
+            </div>
+            <button class="rk__proof" type="button" aria-label="Open the Google screenshot for Metro-Facing &amp; High Rental Yield Retail Shops in Noida Sectors 72 and 110"><img src="assets/img/rank/serp-60.webp" alt="Google results for &quot;Metro-Facing &amp; High Rental Yield Retail Shops in Noida Sectors 72 and 110&quot; showing Shubharambh Infra Advisors at #1, 19 Nov 2026 3:59 PM" width="799" height="632" loading="lazy" data-zoom><span>Proof</span></button>
+          </li>
+          <li class="rk rk--more" data-cat="money">
+            <span class="rk__pos rk__pos--1" aria-label="Rank 1"><small>#</small>1</span>
+            <div class="rk__main">
+              <a class="rk__kw" href="https://www.google.com/search?q=Top+Premium+Residential+Property+in+Haridwar" target="_blank" rel="noopener" title="Search this on Google now"><i data-lucide="search" aria-hidden="true"></i><span>Top Premium Residential Property in Haridwar</span><i data-lucide="arrow-up-right" class="rk__go" aria-hidden="true"></i></a>
+              <p class="rk__meta"><span class="rk__tag rk__tag--money">Buyer search</span><span class="rk__above"><i data-lucide="trending-up" aria-hidden="true"></i>Above 99acres, Golden Avenue, MagicBricks</span><time>19 Nov 2026 · 4:02 PM</time></p>
+            </div>
+            <button class="rk__proof" type="button" aria-label="Open the Google screenshot for Top Premium Residential Property in Haridwar"><img src="assets/img/rank/serp-65.webp" alt="Google results for &quot;Top Premium Residential Property in Haridwar&quot; showing Shubharambh Infra Advisors at #1, 19 Nov 2026 4:02 PM" width="799" height="632" loading="lazy" data-zoom><span>Proof</span></button>
+          </li>
+          <li class="rk rk--more" data-cat="money">
+            <span class="rk__pos rk__pos--1" aria-label="Rank 1"><small>#</small>1</span>
+            <div class="rk__main">
+              <a class="rk__kw" href="https://www.google.com/search?q=Devika+Vibe+Panache+Bazaar" target="_blank" rel="noopener" title="Search this on Google now"><i data-lucide="search" aria-hidden="true"></i><span>Devika Vibe Panache Bazaar</span><i data-lucide="arrow-up-right" class="rk__go" aria-hidden="true"></i></a>
+              <p class="rk__meta"><span class="rk__tag rk__tag--money">Buyer search</span><span class="rk__above"><i data-lucide="trending-up" aria-hidden="true"></i>Above Devika Vibe 110 (project site), Scribd, MagicBricks</span><span class="rk__note">Above the project&#x27;s own website</span><time>19 Nov 2026 · 4:28 PM</time></p>
+            </div>
+            <button class="rk__proof" type="button" aria-label="Open the Google screenshot for Devika Vibe Panache Bazaar"><img src="assets/img/rank/serp-70.webp" alt="Google results for &quot;Devika Vibe Panache Bazaar&quot; showing Shubharambh Infra Advisors at #1, 19 Nov 2026 4:28 PM" width="799" height="494" loading="lazy" data-zoom><span>Proof</span></button>
+          </li>
+          <li class="rk rk--more" data-cat="money">
+            <span class="rk__pos rk__pos--1" aria-label="Rank 1"><small>#</small>1</span>
+            <div class="rk__main">
+              <a class="rk__kw" href="https://www.google.com/search?q=Leading+Real+Estate+Consultants+in+Haridwar%3A+Your+2026+Investment+Guide" target="_blank" rel="noopener" title="Search this on Google now"><i data-lucide="search" aria-hidden="true"></i><span>Leading Real Estate Consultants in Haridwar: Your 2026 Investment Guide</span><i data-lucide="arrow-up-right" class="rk__go" aria-hidden="true"></i></a>
+              <p class="rk__meta"><span class="rk__tag rk__tag--money">Buyer search</span><span class="rk__above"><i data-lucide="trending-up" aria-hidden="true"></i>Above Reddit, Justdial, Golden Avenue</span><span class="rk__note">Above Justdial and a Reddit thread on the same question</span><time>19 Nov 2026 · 4:27 PM</time></p>
+            </div>
+            <button class="rk__proof" type="button" aria-label="Open the Google screenshot for Leading Real Estate Consultants in Haridwar: Your 2026 Investment Guide"><img src="assets/img/rank/serp-68.webp" alt="Google results for &quot;Leading Real Estate Consultants in Haridwar: Your 2026 Investment Guide&quot; showing Shubharambh Infra Advisors at #1, 19 Nov 2026 4:27 PM" width="799" height="632" loading="lazy" data-zoom><span>Proof</span></button>
+          </li>
+          <li class="rk rk--more" data-cat="money">
+            <span class="rk__pos rk__pos--2" aria-label="Rank 2"><small>#</small>2</span>
+            <div class="rk__main">
+              <a class="rk__kw" href="https://www.google.com/search?q=5+High+Growth+Commercial+Picks+on+Yamuna+Expressway" target="_blank" rel="noopener" title="Search this on Google now"><i data-lucide="search" aria-hidden="true"></i><span>5 High Growth Commercial Picks on Yamuna Expressway</span><i data-lucide="arrow-up-right" class="rk__go" aria-hidden="true"></i></a>
+              <p class="rk__meta"><span class="rk__tag rk__tag--money">Buyer search</span><time>15 Nov 2026 · 2:58 PM</time></p>
+            </div>
+            <button class="rk__proof" type="button" aria-label="Open the Google screenshot for 5 High Growth Commercial Picks on Yamuna Expressway"><img src="assets/img/rank/serp-24.webp" alt="Google results for &quot;5 High Growth Commercial Picks on Yamuna Expressway&quot; showing Shubharambh Infra Advisors at #2, 15 Nov 2026 2:58 PM" width="1400" height="757" loading="lazy" data-zoom><span>Proof</span></button>
+          </li>
+          <li class="rk rk--more" data-cat="money">
+            <span class="rk__pos rk__pos--2" aria-label="Rank 3"><small>#</small>3</span>
+            <div class="rk__main">
+              <a class="rk__kw" href="https://www.google.com/search?q=svg+town+square+2" target="_blank" rel="noopener" title="Search this on Google now"><i data-lucide="search" aria-hidden="true"></i><span>svg town square 2</span><i data-lucide="arrow-up-right" class="rk__go" aria-hidden="true"></i></a>
+              <p class="rk__meta"><span class="rk__tag rk__tag--money">Buyer search</span><span class="rk__above"><i data-lucide="trending-up" aria-hidden="true"></i>Above IndiProp, MoneyTree Realty, Scribd</span><span class="rk__note">Only the builder&#x27;s own site and one listing site are above</span><time>19 Nov 2026 · 2:32 PM</time></p>
+            </div>
+            <button class="rk__proof" type="button" aria-label="Open the Google screenshot for svg town square 2"><img src="assets/img/rank/serp-37.webp" alt="Google results for &quot;svg town square 2&quot; showing Shubharambh Infra Advisors at #3, 19 Nov 2026 2:32 PM" width="1400" height="787" loading="lazy" data-zoom><span>Proof</span></button>
+          </li>
+          <li class="rk rk--more" data-cat="money">
+            <span class="rk__pos rk__pos--2" aria-label="Rank 2"><small>#</small>2</span>
+            <div class="rk__main">
+              <a class="rk__kw" href="https://www.google.com/search?q=Max+Estate+105+And+M3M+Projects+Leading+Noida+Expressway+Luxury+Homes" target="_blank" rel="noopener" title="Search this on Google now"><i data-lucide="search" aria-hidden="true"></i><span>Max Estate 105 And M3M Projects Leading Noida Expressway Luxury Homes</span><i data-lucide="arrow-up-right" class="rk__go" aria-hidden="true"></i></a>
+              <p class="rk__meta"><span class="rk__tag rk__tag--money">Buyer search</span><span class="rk__above"><i data-lucide="trending-up" aria-hidden="true"></i>Above Superluxere, 99acres</span><span class="rk__note">Only Max Estates&#x27; own website is above</span><time>19 Nov 2026 · 4:03 PM</time></p>
+            </div>
+            <button class="rk__proof" type="button" aria-label="Open the Google screenshot for Max Estate 105 And M3M Projects Leading Noida Expressway Luxury Homes"><img src="assets/img/rank/serp-67.webp" alt="Google results for &quot;Max Estate 105 And M3M Projects Leading Noida Expressway Luxury Homes&quot; showing Shubharambh Infra Advisors at #2, 19 Nov 2026 4:03 PM" width="799" height="632" loading="lazy" data-zoom><span>Proof</span></button>
+          </li>
+          <li class="rk rk--more" data-cat="brands">
+            <span class="rk__pos rk__pos--1" aria-label="Rank 1"><small>#</small>1</span>
+            <div class="rk__main">
+              <a class="rk__kw" href="https://www.google.com/search?q=Noida+Property+Buyer%27s+Guide%3A+RERA%2C+Stamp+Duty%2C+Loans+%26+Legal" target="_blank" rel="noopener" title="Search this on Google now"><i data-lucide="search" aria-hidden="true"></i><span>Noida Property Buyer&#x27;s Guide: RERA, Stamp Duty, Loans &amp; Legal</span><i data-lucide="arrow-up-right" class="rk__go" aria-hidden="true"></i></a>
+              <p class="rk__meta"><span class="rk__tag rk__tag--brands">Home-buying guide</span><span class="rk__above"><i data-lucide="trending-up" aria-hidden="true"></i>Above Ziuma, Truelite Estates</span><span class="rk__note">Also the top source in Google&#x27;s AI Overview</span><time>19 Nov 2026 · 2:28 PM</time></p>
+            </div>
+            <button class="rk__proof" type="button" aria-label="Open the Google screenshot for Noida Property Buyer&#x27;s Guide: RERA, Stamp Duty, Loans &amp; Legal"><img src="assets/img/rank/serp-31.webp" alt="Google results for &quot;Noida Property Buyer&#x27;s Guide: RERA, Stamp Duty, Loans &amp; Legal&quot; showing Shubharambh Infra Advisors at #1, 19 Nov 2026 2:28 PM" width="1400" height="787" loading="lazy" data-zoom><span>Proof</span></button>
+          </li>
+          <li class="rk rk--more" data-cat="brands">
+            <span class="rk__pos rk__pos--1" aria-label="Rank 1"><small>#</small>1</span>
+            <div class="rk__main">
+              <a class="rk__kw" href="https://www.google.com/search?q=How+to+Safely+Buy+a+Home+in+India+with+Expert+Tips+and+RERA+Guidelines%3F" target="_blank" rel="noopener" title="Search this on Google now"><i data-lucide="search" aria-hidden="true"></i><span>How to Safely Buy a Home in India with Expert Tips and RERA Guidelines?</span><i data-lucide="arrow-up-right" class="rk__go" aria-hidden="true"></i></a>
+              <p class="rk__meta"><span class="rk__tag rk__tag--brands">Home-buying guide</span><span class="rk__above"><i data-lucide="trending-up" aria-hidden="true"></i>Above Mahindra Lifespaces, Birla Estates</span><time>15 Nov 2026 · 3:00 PM</time></p>
+            </div>
+            <button class="rk__proof" type="button" aria-label="Open the Google screenshot for How to Safely Buy a Home in India with Expert Tips and RERA Guidelines?"><img src="assets/img/rank/serp-28.webp" alt="Google results for &quot;How to Safely Buy a Home in India with Expert Tips and RERA Guidelines?&quot; showing Shubharambh Infra Advisors at #1, 15 Nov 2026 3:00 PM" width="1400" height="746" loading="lazy" data-zoom><span>Proof</span></button>
+          </li>
+          <li class="rk rk--more" data-cat="brands">
+            <span class="rk__pos rk__pos--1" aria-label="Rank 1"><small>#</small>1</span>
+            <div class="rk__main">
+              <a class="rk__kw" href="https://www.google.com/search?q=Finding+High-ROI+Properties+with+Market+Metrics" target="_blank" rel="noopener" title="Search this on Google now"><i data-lucide="search" aria-hidden="true"></i><span>Finding High-ROI Properties with Market Metrics</span><i data-lucide="arrow-up-right" class="rk__go" aria-hidden="true"></i></a>
+              <p class="rk__meta"><span class="rk__tag rk__tag--brands">Home-buying guide</span><span class="rk__above"><i data-lucide="trending-up" aria-hidden="true"></i>Above M3M India, Investopedia</span><time>15 Nov 2026 · 2:59 PM</time></p>
+            </div>
+            <button class="rk__proof" type="button" aria-label="Open the Google screenshot for Finding High-ROI Properties with Market Metrics"><img src="assets/img/rank/serp-27.webp" alt="Google results for &quot;Finding High-ROI Properties with Market Metrics&quot; showing Shubharambh Infra Advisors at #1, 15 Nov 2026 2:59 PM" width="1400" height="746" loading="lazy" data-zoom><span>Proof</span></button>
+          </li>
+          <li class="rk rk--more" data-cat="brands">
+            <span class="rk__pos rk__pos--1" aria-label="Rank 1"><small>#</small>1</span>
+            <div class="rk__main">
+              <a class="rk__kw" href="https://www.google.com/search?q=4+Steps+to+Buying+a+Home+in+2026" target="_blank" rel="noopener" title="Search this on Google now"><i data-lucide="search" aria-hidden="true"></i><span>4 Steps to Buying a Home in 2026</span><i data-lucide="arrow-up-right" class="rk__go" aria-hidden="true"></i></a>
+              <p class="rk__meta"><span class="rk__tag rk__tag--brands">Home-buying guide</span><span class="rk__above"><i data-lucide="trending-up" aria-hidden="true"></i>Above Utkarsh Small Finance Bank, Mahindra Lifespaces</span><time>15 Nov 2026 · 2:53 PM</time></p>
+            </div>
+            <button class="rk__proof" type="button" aria-label="Open the Google screenshot for 4 Steps to Buying a Home in 2026"><img src="assets/img/rank/serp-14.webp" alt="Google results for &quot;4 Steps to Buying a Home in 2026&quot; showing Shubharambh Infra Advisors at #1, 15 Nov 2026 2:53 PM" width="1400" height="778" loading="lazy" data-zoom><span>Proof</span></button>
+          </li>
+          <li class="rk rk--more" data-cat="brands">
+            <span class="rk__pos rk__pos--1" aria-label="Rank 1"><small>#</small>1</span>
+            <div class="rk__main">
+              <a class="rk__kw" href="https://www.google.com/search?q=5+Crucial+Clauses+You+Must+Include+in+the+Home+Buying+Process" target="_blank" rel="noopener" title="Search this on Google now"><i data-lucide="search" aria-hidden="true"></i><span>5 Crucial Clauses You Must Include in the Home Buying Process</span><i data-lucide="arrow-up-right" class="rk__go" aria-hidden="true"></i></a>
+              <p class="rk__meta"><span class="rk__tag rk__tag--brands">Home-buying guide</span><span class="rk__above"><i data-lucide="trending-up" aria-hidden="true"></i>Above Kotak Bank</span><time>15 Nov 2026 · 2:53 PM</time></p>
+            </div>
+            <button class="rk__proof" type="button" aria-label="Open the Google screenshot for 5 Crucial Clauses You Must Include in the Home Buying Process"><img src="assets/img/rank/serp-15.webp" alt="Google results for &quot;5 Crucial Clauses You Must Include in the Home Buying Process&quot; showing Shubharambh Infra Advisors at #1, 15 Nov 2026 2:53 PM" width="1400" height="746" loading="lazy" data-zoom><span>Proof</span></button>
+          </li>
+          <li class="rk rk--more" data-cat="brands">
+            <span class="rk__pos rk__pos--2" aria-label="Rank 2"><small>#</small>2</span>
+            <div class="rk__main">
+              <a class="rk__kw" href="https://www.google.com/search?q=Commercial+vs+Residential+Rentals+What%27s+a+Better+Investment" target="_blank" rel="noopener" title="Search this on Google now"><i data-lucide="search" aria-hidden="true"></i><span>Commercial vs Residential Rentals What&#x27;s a Better Investment</span><i data-lucide="arrow-up-right" class="rk__go" aria-hidden="true"></i></a>
+              <p class="rk__meta"><span class="rk__tag rk__tag--brands">Home-buying guide</span><span class="rk__note">Just behind Kotak Bank</span><time>15 Nov 2026 · 2:58 PM</time></p>
+            </div>
+            <button class="rk__proof" type="button" aria-label="Open the Google screenshot for Commercial vs Residential Rentals What&#x27;s a Better Investment"><img src="assets/img/rank/serp-23.webp" alt="Google results for &quot;Commercial vs Residential Rentals What&#x27;s a Better Investment&quot; showing Shubharambh Infra Advisors at #2, 15 Nov 2026 2:58 PM" width="1400" height="756" loading="lazy" data-zoom><span>Proof</span></button>
+          </li>
+          <li class="rk rk--more" data-cat="insights">
+            <span class="rk__pos rk__pos--1" aria-label="Rank 1"><small>#</small>1</span>
+            <div class="rk__main">
+              <a class="rk__kw" href="https://www.google.com/search?q=The+10-Lane+Yamuna+Pushta+Road+Expansion%3A+Which+5+Sectors+Will+See+50%25+Appreciation%3F" target="_blank" rel="noopener" title="Search this on Google now"><i data-lucide="search" aria-hidden="true"></i><span>The 10-Lane Yamuna Pushta Road Expansion: Which 5 Sectors Will See 50% Appreciation?</span><i data-lucide="arrow-up-right" class="rk__go" aria-hidden="true"></i></a>
+              <p class="rk__meta"><span class="rk__tag rk__tag--insights">Market insight</span><span class="rk__above"><i data-lucide="trending-up" aria-hidden="true"></i>Above Prateek Group, Times of India</span><span class="rk__note">Above The Times of India</span><time>19 Nov 2026 · 3:57 PM</time></p>
+            </div>
+            <button class="rk__proof" type="button" aria-label="Open the Google screenshot for The 10-Lane Yamuna Pushta Road Expansion: Which 5 Sectors Will See 50% Appreciation?"><img src="assets/img/rank/serp-57.webp" alt="Google results for &quot;The 10-Lane Yamuna Pushta Road Expansion: Which 5 Sectors Will See 50% Appreciation?&quot; showing Shubharambh Infra Advisors at #1, 19 Nov 2026 3:57 PM" width="799" height="632" loading="lazy" data-zoom><span>Proof</span></button>
+          </li>
+          <li class="rk rk--more" data-cat="insights">
+            <span class="rk__pos rk__pos--1" aria-label="Rank 1"><small>#</small>1</span>
+            <div class="rk__main">
+              <a class="rk__kw" href="https://www.google.com/search?q=The+Impact+of+Ganga+Expressway+on+Haridwar+Property+Markets" target="_blank" rel="noopener" title="Search this on Google now"><i data-lucide="search" aria-hidden="true"></i><span>The Impact of Ganga Expressway on Haridwar Property Markets</span><i data-lucide="arrow-up-right" class="rk__go" aria-hidden="true"></i></a>
+              <p class="rk__meta"><span class="rk__tag rk__tag--insights">Market insight</span><span class="rk__above"><i data-lucide="trending-up" aria-hidden="true"></i>Above Invest UP (UP Govt), News18, MagicBricks</span><span class="rk__note">Above the UP Government&#x27;s Invest UP website</span><time>19 Nov 2026 · 3:59 PM</time></p>
+            </div>
+            <button class="rk__proof" type="button" aria-label="Open the Google screenshot for The Impact of Ganga Expressway on Haridwar Property Markets"><img src="assets/img/rank/serp-61.webp" alt="Google results for &quot;The Impact of Ganga Expressway on Haridwar Property Markets&quot; showing Shubharambh Infra Advisors at #1, 19 Nov 2026 3:59 PM" width="799" height="632" loading="lazy" data-zoom><span>Proof</span></button>
+          </li>
+          <li class="rk rk--more" data-cat="insights">
+            <span class="rk__pos rk__pos--1" aria-label="Rank 1"><small>#</small>1</span>
+            <div class="rk__main">
+              <a class="rk__kw" href="https://www.google.com/search?q=The+Ultimate+Guide+to+Central+Delhi%27s+Retail+Scene" target="_blank" rel="noopener" title="Search this on Google now"><i data-lucide="search" aria-hidden="true"></i><span>The Ultimate Guide to Central Delhi&#x27;s Retail Scene</span><i data-lucide="arrow-up-right" class="rk__go" aria-hidden="true"></i></a>
+              <p class="rk__meta"><span class="rk__tag rk__tag--insights">Market insight</span><span class="rk__above"><i data-lucide="trending-up" aria-hidden="true"></i>Above Delhi Tourism, TripAdvisor, Times of India</span><span class="rk__note">Above Delhi Tourism&#x27;s official website</span><time>19 Nov 2026 · 4:01 PM</time></p>
+            </div>
+            <button class="rk__proof" type="button" aria-label="Open the Google screenshot for The Ultimate Guide to Central Delhi&#x27;s Retail Scene"><img src="assets/img/rank/serp-62.webp" alt="Google results for &quot;The Ultimate Guide to Central Delhi&#x27;s Retail Scene&quot; showing Shubharambh Infra Advisors at #1, 19 Nov 2026 4:01 PM" width="799" height="632" loading="lazy" data-zoom><span>Proof</span></button>
+          </li>
+          <li class="rk rk--more" data-cat="insights">
+            <span class="rk__pos rk__pos--1" aria-label="Rank 1"><small>#</small>1</span>
+            <div class="rk__main">
+              <a class="rk__kw" href="https://www.google.com/search?q=Indian+Real+Estate+Industry+Report+Covering+Market+Trends%2C+Indexes%2C+and+Growth+Drivers" target="_blank" rel="noopener" title="Search this on Google now"><i data-lucide="search" aria-hidden="true"></i><span>Indian Real Estate Industry Report Covering Market Trends, Indexes, and Growth Drivers</span><i data-lucide="arrow-up-right" class="rk__go" aria-hidden="true"></i></a>
+              <p class="rk__meta"><span class="rk__tag rk__tag--insights">Market insight</span><span class="rk__above"><i data-lucide="trending-up" aria-hidden="true"></i>Above IBEF, Mordor Intelligence, Grant Thornton, NAREDCO</span><span class="rk__note">Above IBEF, Grant Thornton and NAREDCO</span><time>19 Nov 2026 · 4:01 PM</time></p>
+            </div>
+            <button class="rk__proof" type="button" aria-label="Open the Google screenshot for Indian Real Estate Industry Report Covering Market Trends, Indexes, and Growth Drivers"><img src="assets/img/rank/serp-63.webp" alt="Google results for &quot;Indian Real Estate Industry Report Covering Market Trends, Indexes, and Growth Drivers&quot; showing Shubharambh Infra Advisors at #1, 19 Nov 2026 4:01 PM" width="799" height="632" loading="lazy" data-zoom><span>Proof</span></button>
+          </li>
+          <li class="rk rk--more" data-cat="insights">
+            <span class="rk__pos rk__pos--1" aria-label="Rank 1"><small>#</small>1</span>
+            <div class="rk__main">
+              <a class="rk__kw" href="https://www.google.com/search?q=Best+Builders+%26+Developers+in+Noida+%282026%29" target="_blank" rel="noopener" title="Search this on Google now"><i data-lucide="search" aria-hidden="true"></i><span>Best Builders &amp; Developers in Noida (2026)</span><i data-lucide="arrow-up-right" class="rk__go" aria-hidden="true"></i></a>
+              <p class="rk__meta"><span class="rk__tag rk__tag--insights">Market insight</span><span class="rk__above"><i data-lucide="trending-up" aria-hidden="true"></i>Above Propseekers Realty</span><span class="rk__note">Also the top source in Google&#x27;s AI Overview</span><time>19 Nov 2026 · 2:30 PM</time></p>
+            </div>
+            <button class="rk__proof" type="button" aria-label="Open the Google screenshot for Best Builders &amp; Developers in Noida (2026)"><img src="assets/img/rank/serp-35.webp" alt="Google results for &quot;Best Builders &amp; Developers in Noida (2026)&quot; showing Shubharambh Infra Advisors at #1, 19 Nov 2026 2:30 PM" width="1400" height="787" loading="lazy" data-zoom><span>Proof</span></button>
+          </li>
+          <li class="rk rk--more" data-cat="insights">
+            <span class="rk__pos rk__pos--1" aria-label="Rank 1"><small>#</small>1</span>
+            <div class="rk__main">
+              <a class="rk__kw" href="https://www.google.com/search?q=Best+Areas+to+Invest+in+Noida+%26+Greater+Noida+%282026%29" target="_blank" rel="noopener" title="Search this on Google now"><i data-lucide="search" aria-hidden="true"></i><span>Best Areas to Invest in Noida &amp; Greater Noida (2026)</span><i data-lucide="arrow-up-right" class="rk__go" aria-hidden="true"></i></a>
+              <p class="rk__meta"><span class="rk__tag rk__tag--insights">Market insight</span><span class="rk__above"><i data-lucide="trending-up" aria-hidden="true"></i>Above Propshop</span><span class="rk__note">Also the top source in Google&#x27;s AI Overview</span><time>19 Nov 2026 · 2:31 PM</time></p>
+            </div>
+            <button class="rk__proof" type="button" aria-label="Open the Google screenshot for Best Areas to Invest in Noida &amp; Greater Noida (2026)"><img src="assets/img/rank/serp-36.webp" alt="Google results for &quot;Best Areas to Invest in Noida &amp; Greater Noida (2026)&quot; showing Shubharambh Infra Advisors at #1, 19 Nov 2026 2:31 PM" width="1400" height="787" loading="lazy" data-zoom><span>Proof</span></button>
+          </li>
+          <li class="rk rk--more" data-cat="insights">
+            <span class="rk__pos rk__pos--1" aria-label="Rank 1"><small>#</small>1</span>
+            <div class="rk__main">
+              <a class="rk__kw" href="https://www.google.com/search?q=5+Most+Expensive+Homes+in+Noida+with+Their+Pricing" target="_blank" rel="noopener" title="Search this on Google now"><i data-lucide="search" aria-hidden="true"></i><span>5 Most Expensive Homes in Noida with Their Pricing</span><i data-lucide="arrow-up-right" class="rk__go" aria-hidden="true"></i></a>
+              <p class="rk__meta"><span class="rk__tag rk__tag--insights">Market insight</span><span class="rk__above"><i data-lucide="trending-up" aria-hidden="true"></i>Above InvestoXpert, MoneyTree Realty</span><time>15 Nov 2026 · 2:55 PM</time></p>
+            </div>
+            <button class="rk__proof" type="button" aria-label="Open the Google screenshot for 5 Most Expensive Homes in Noida with Their Pricing"><img src="assets/img/rank/serp-18.webp" alt="Google results for &quot;5 Most Expensive Homes in Noida with Their Pricing&quot; showing Shubharambh Infra Advisors at #1, 15 Nov 2026 2:55 PM" width="1400" height="787" loading="lazy" data-zoom><span>Proof</span></button>
+          </li>
+          <li class="rk rk--more" data-cat="insights">
+            <span class="rk__pos rk__pos--1" aria-label="Rank 1"><small>#</small>1</span>
+            <div class="rk__main">
+              <a class="rk__kw" href="https://www.google.com/search?q=5+Game-Changing+Commercial+Projects+Shaping+Greater+Noida%27s+Future" target="_blank" rel="noopener" title="Search this on Google now"><i data-lucide="search" aria-hidden="true"></i><span>5 Game-Changing Commercial Projects Shaping Greater Noida&#x27;s Future</span><i data-lucide="arrow-up-right" class="rk__go" aria-hidden="true"></i></a>
+              <p class="rk__meta"><span class="rk__tag rk__tag--insights">Market insight</span><span class="rk__above"><i data-lucide="trending-up" aria-hidden="true"></i>Above Realty Assistant</span><time>15 Nov 2026 · 2:54 PM</time></p>
+            </div>
+            <button class="rk__proof" type="button" aria-label="Open the Google screenshot for 5 Game-Changing Commercial Projects Shaping Greater Noida&#x27;s Future"><img src="assets/img/rank/serp-17.webp" alt="Google results for &quot;5 Game-Changing Commercial Projects Shaping Greater Noida&#x27;s Future&quot; showing Shubharambh Infra Advisors at #1, 15 Nov 2026 2:54 PM" width="1400" height="787" loading="lazy" data-zoom><span>Proof</span></button>
+          </li>
+          <li class="rk rk--more" data-cat="insights">
+            <span class="rk__pos rk__pos--1" aria-label="Rank 1"><small>#</small>1</span>
+            <div class="rk__main">
+              <a class="rk__kw" href="https://www.google.com/search?q=3+Mixed+Use+Commercial+Icons+Shaping+Greater+Noida+Real+Estate" target="_blank" rel="noopener" title="Search this on Google now"><i data-lucide="search" aria-hidden="true"></i><span>3 Mixed Use Commercial Icons Shaping Greater Noida Real Estate</span><i data-lucide="arrow-up-right" class="rk__go" aria-hidden="true"></i></a>
+              <p class="rk__meta"><span class="rk__tag rk__tag--insights">Market insight</span><span class="rk__above"><i data-lucide="trending-up" aria-hidden="true"></i>Above Realty Assistant</span><time>15 Nov 2026 · 2:57 PM</time></p>
+            </div>
+            <button class="rk__proof" type="button" aria-label="Open the Google screenshot for 3 Mixed Use Commercial Icons Shaping Greater Noida Real Estate"><img src="assets/img/rank/serp-20.webp" alt="Google results for &quot;3 Mixed Use Commercial Icons Shaping Greater Noida Real Estate&quot; showing Shubharambh Infra Advisors at #1, 15 Nov 2026 2:57 PM" width="1400" height="749" loading="lazy" data-zoom><span>Proof</span></button>
+          </li>
+          <li class="rk rk--more" data-cat="insights">
+            <span class="rk__pos rk__pos--1" aria-label="Rank 1"><small>#</small>1</span>
+            <div class="rk__main">
+              <a class="rk__kw" href="https://www.google.com/search?q=4+Major+Advantages+of+Building+a+New+Expressway+on+Yamuna+River" target="_blank" rel="noopener" title="Search this on Google now"><i data-lucide="search" aria-hidden="true"></i><span>4 Major Advantages of Building a New Expressway on Yamuna River</span><i data-lucide="arrow-up-right" class="rk__go" aria-hidden="true"></i></a>
+              <p class="rk__meta"><span class="rk__tag rk__tag--insights">Market insight</span><span class="rk__above"><i data-lucide="trending-up" aria-hidden="true"></i>Above Wealth Clinic, So City</span><time>15 Nov 2026 · 2:56 PM</time></p>
+            </div>
+            <button class="rk__proof" type="button" aria-label="Open the Google screenshot for 4 Major Advantages of Building a New Expressway on Yamuna River"><img src="assets/img/rank/serp-19.webp" alt="Google results for &quot;4 Major Advantages of Building a New Expressway on Yamuna River&quot; showing Shubharambh Infra Advisors at #1, 15 Nov 2026 2:56 PM" width="1400" height="750" loading="lazy" data-zoom><span>Proof</span></button>
+          </li>
+          <li class="rk rk--more" data-cat="insights">
+            <span class="rk__pos rk__pos--1" aria-label="Rank 1"><small>#</small>1</span>
+            <div class="rk__main">
+              <a class="rk__kw" href="https://www.google.com/search?q=5+Leading+Real+Estate+Giants+Pushing+NCR%27s+Growth+Trajectory" target="_blank" rel="noopener" title="Search this on Google now"><i data-lucide="search" aria-hidden="true"></i><span>5 Leading Real Estate Giants Pushing NCR&#x27;s Growth Trajectory</span><i data-lucide="arrow-up-right" class="rk__go" aria-hidden="true"></i></a>
+              <p class="rk__meta"><span class="rk__tag rk__tag--insights">Market insight</span><span class="rk__above"><i data-lucide="trending-up" aria-hidden="true"></i>Above Realty Assistant</span><span class="rk__note">Also holds #3</span><time>15 Nov 2026 · 2:54 PM</time></p>
+            </div>
+            <button class="rk__proof" type="button" aria-label="Open the Google screenshot for 5 Leading Real Estate Giants Pushing NCR&#x27;s Growth Trajectory"><img src="assets/img/rank/serp-16.webp" alt="Google results for &quot;5 Leading Real Estate Giants Pushing NCR&#x27;s Growth Trajectory&quot; showing Shubharambh Infra Advisors at #1, 15 Nov 2026 2:54 PM" width="1400" height="787" loading="lazy" data-zoom><span>Proof</span></button>
+          </li>
+          <li class="rk rk--more" data-cat="insights">
+            <span class="rk__pos rk__pos--1" aria-label="Rank 1"><small>#</small>1</span>
+            <div class="rk__main">
+              <a class="rk__kw" href="https://www.google.com/search?q=5+Luxury+Residences+in+Pune+So+Cool+You%27ll+Want+to+Move+in+Right+Now" target="_blank" rel="noopener" title="Search this on Google now"><i data-lucide="search" aria-hidden="true"></i><span>5 Luxury Residences in Pune So Cool You&#x27;ll Want to Move in Right Now</span><i data-lucide="arrow-up-right" class="rk__go" aria-hidden="true"></i></a>
+              <p class="rk__meta"><span class="rk__tag rk__tag--insights">Market insight</span><time>15 Nov 2026 · 2:57 PM</time></p>
+            </div>
+            <button class="rk__proof" type="button" aria-label="Open the Google screenshot for 5 Luxury Residences in Pune So Cool You&#x27;ll Want to Move in Right Now"><img src="assets/img/rank/serp-21.webp" alt="Google results for &quot;5 Luxury Residences in Pune So Cool You&#x27;ll Want to Move in Right Now&quot; showing Shubharambh Infra Advisors at #1, 15 Nov 2026 2:57 PM" width="1400" height="779" loading="lazy" data-zoom><span>Proof</span></button>
+          </li>
+          <li class="rk rk--more" data-cat="insights">
+            <span class="rk__pos rk__pos--1" aria-label="Rank 1"><small>#</small>1</span>
+            <div class="rk__main">
+              <a class="rk__kw" href="https://www.google.com/search?q=Jewar+Airport+2026+Countdown%3A+Real+Estate+Investment+in+Noida" target="_blank" rel="noopener" title="Search this on Google now"><i data-lucide="search" aria-hidden="true"></i><span>Jewar Airport 2026 Countdown: Real Estate Investment in Noida</span><i data-lucide="arrow-up-right" class="rk__go" aria-hidden="true"></i></a>
+              <p class="rk__meta"><span class="rk__tag rk__tag--insights">Market insight</span><span class="rk__above"><i data-lucide="trending-up" aria-hidden="true"></i>Above LinkedIn</span><time>19 Nov 2026 · 3:44 PM</time></p>
+            </div>
+            <button class="rk__proof" type="button" aria-label="Open the Google screenshot for Jewar Airport 2026 Countdown: Real Estate Investment in Noida"><img src="assets/img/rank/serp-38.webp" alt="Google results for &quot;Jewar Airport 2026 Countdown: Real Estate Investment in Noida&quot; showing Shubharambh Infra Advisors at #1, 19 Nov 2026 3:44 PM" width="799" height="632" loading="lazy" data-zoom><span>Proof</span></button>
+          </li>
+          <li class="rk rk--more" data-cat="insights">
+            <span class="rk__pos rk__pos--1" aria-label="Rank 1"><small>#</small>1</span>
+            <div class="rk__main">
+              <a class="rk__kw" href="https://www.google.com/search?q=Noida+2+BHK+Flat+Price+Trends+and+Best+Areas+for+Budget+Housing" target="_blank" rel="noopener" title="Search this on Google now"><i data-lucide="search" aria-hidden="true"></i><span>Noida 2 BHK Flat Price Trends and Best Areas for Budget Housing</span><i data-lucide="arrow-up-right" class="rk__go" aria-hidden="true"></i></a>
+              <p class="rk__meta"><span class="rk__tag rk__tag--insights">Market insight</span><span class="rk__above"><i data-lucide="trending-up" aria-hidden="true"></i>Above 99acres, Propshop</span><time>19 Nov 2026 · 3:47 PM</time></p>
+            </div>
+            <button class="rk__proof" type="button" aria-label="Open the Google screenshot for Noida 2 BHK Flat Price Trends and Best Areas for Budget Housing"><img src="assets/img/rank/serp-41.webp" alt="Google results for &quot;Noida 2 BHK Flat Price Trends and Best Areas for Budget Housing&quot; showing Shubharambh Infra Advisors at #1, 19 Nov 2026 3:47 PM" width="799" height="632" loading="lazy" data-zoom><span>Proof</span></button>
+          </li>
+          <li class="rk rk--more" data-cat="insights">
+            <span class="rk__pos rk__pos--1" aria-label="Rank 1"><small>#</small>1</span>
+            <div class="rk__main">
+              <a class="rk__kw" href="https://www.google.com/search?q=Rental+Income+Potential+of+Investing+in+Studio+Apartments+on+Yamuna+Expressway" target="_blank" rel="noopener" title="Search this on Google now"><i data-lucide="search" aria-hidden="true"></i><span>Rental Income Potential of Investing in Studio Apartments on Yamuna Expressway</span><i data-lucide="arrow-up-right" class="rk__go" aria-hidden="true"></i></a>
+              <p class="rk__meta"><span class="rk__tag rk__tag--insights">Market insight</span><span class="rk__above"><i data-lucide="trending-up" aria-hidden="true"></i>Above Mores</span><time>19 Nov 2026 · 3:49 PM</time></p>
+            </div>
+            <button class="rk__proof" type="button" aria-label="Open the Google screenshot for Rental Income Potential of Investing in Studio Apartments on Yamuna Expressway"><img src="assets/img/rank/serp-44.webp" alt="Google results for &quot;Rental Income Potential of Investing in Studio Apartments on Yamuna Expressway&quot; showing Shubharambh Infra Advisors at #1, 19 Nov 2026 3:49 PM" width="799" height="632" loading="lazy" data-zoom><span>Proof</span></button>
+          </li>
+          <li class="rk rk--more" data-cat="insights">
+            <span class="rk__pos rk__pos--1" aria-label="Rank 1"><small>#</small>1</span>
+            <div class="rk__main">
+              <a class="rk__kw" href="https://www.google.com/search?q=Commercial+vs.+Residential+in+Sector+72%3A+Analyzing+Yields+at+M3M+The+Line+and+Dasnac+The+ARC" target="_blank" rel="noopener" title="Search this on Google now"><i data-lucide="search" aria-hidden="true"></i><span>Commercial vs. Residential in Sector 72: Analyzing Yields at M3M The Line and Dasnac The ARC</span><i data-lucide="arrow-up-right" class="rk__go" aria-hidden="true"></i></a>
+              <p class="rk__meta"><span class="rk__tag rk__tag--insights">Market insight</span><span class="rk__above"><i data-lucide="trending-up" aria-hidden="true"></i>Above Property Saraansh, Noida Realty Trends</span><time>19 Nov 2026 · 3:50 PM</time></p>
+            </div>
+            <button class="rk__proof" type="button" aria-label="Open the Google screenshot for Commercial vs. Residential in Sector 72: Analyzing Yields at M3M The Line and Dasnac The ARC"><img src="assets/img/rank/serp-45.webp" alt="Google results for &quot;Commercial vs. Residential in Sector 72: Analyzing Yields at M3M The Line and Dasnac The ARC&quot; showing Shubharambh Infra Advisors at #1, 19 Nov 2026 3:50 PM" width="799" height="632" loading="lazy" data-zoom><span>Proof</span></button>
+          </li>
+          <li class="rk rk--more" data-cat="insights">
+            <span class="rk__pos rk__pos--1" aria-label="Rank 1"><small>#</small>1</span>
+            <div class="rk__main">
+              <a class="rk__kw" href="https://www.google.com/search?q=Noida+Property+Rates+2026%3A+Sector-Wise+Price+Breakdown+and+Rental+Yields" target="_blank" rel="noopener" title="Search this on Google now"><i data-lucide="search" aria-hidden="true"></i><span>Noida Property Rates 2026: Sector-Wise Price Breakdown and Rental Yields</span><i data-lucide="arrow-up-right" class="rk__go" aria-hidden="true"></i></a>
+              <p class="rk__meta"><span class="rk__tag rk__tag--insights">Market insight</span><span class="rk__above"><i data-lucide="trending-up" aria-hidden="true"></i>Above Mores, VillaAdda</span><time>19 Nov 2026 · 3:51 PM</time></p>
+            </div>
+            <button class="rk__proof" type="button" aria-label="Open the Google screenshot for Noida Property Rates 2026: Sector-Wise Price Breakdown and Rental Yields"><img src="assets/img/rank/serp-47.webp" alt="Google results for &quot;Noida Property Rates 2026: Sector-Wise Price Breakdown and Rental Yields&quot; showing Shubharambh Infra Advisors at #1, 19 Nov 2026 3:51 PM" width="799" height="632" loading="lazy" data-zoom><span>Proof</span></button>
+          </li>
+          <li class="rk rk--more" data-cat="insights">
+            <span class="rk__pos rk__pos--1" aria-label="Rank 1"><small>#</small>1</span>
+            <div class="rk__main">
+              <a class="rk__kw" href="https://www.google.com/search?q=Best+Areas+to+Invest+in+Haridwar+in+2026%3A+Kankhal%2C+SIDCUL%2C+and+More" target="_blank" rel="noopener" title="Search this on Google now"><i data-lucide="search" aria-hidden="true"></i><span>Best Areas to Invest in Haridwar in 2026: Kankhal, SIDCUL, and More</span><i data-lucide="arrow-up-right" class="rk__go" aria-hidden="true"></i></a>
+              <p class="rk__meta"><span class="rk__tag rk__tag--insights">Market insight</span><span class="rk__above"><i data-lucide="trending-up" aria-hidden="true"></i>Above Nirvaana Greens, ETH Infra</span><time>19 Nov 2026 · 3:52 PM</time></p>
+            </div>
+            <button class="rk__proof" type="button" aria-label="Open the Google screenshot for Best Areas to Invest in Haridwar in 2026: Kankhal, SIDCUL, and More"><img src="assets/img/rank/serp-49.webp" alt="Google results for &quot;Best Areas to Invest in Haridwar in 2026: Kankhal, SIDCUL, and More&quot; showing Shubharambh Infra Advisors at #1, 19 Nov 2026 3:52 PM" width="799" height="632" loading="lazy" data-zoom><span>Proof</span></button>
+          </li>
+          <li class="rk rk--more" data-cat="insights">
+            <span class="rk__pos rk__pos--1" aria-label="Rank 1"><small>#</small>1</span>
+            <div class="rk__main">
+              <a class="rk__kw" href="https://www.google.com/search?q=Navigating+New+Residential+Projects+During+the+Greater+Noida+Real+Estate+Boom" target="_blank" rel="noopener" title="Search this on Google now"><i data-lucide="search" aria-hidden="true"></i><span>Navigating New Residential Projects During the Greater Noida Real Estate Boom</span><i data-lucide="arrow-up-right" class="rk__go" aria-hidden="true"></i></a>
+              <p class="rk__meta"><span class="rk__tag rk__tag--insights">Market insight</span><span class="rk__above"><i data-lucide="trending-up" aria-hidden="true"></i>Above Propshop, Wealth Clinic</span><time>19 Nov 2026 · 3:53 PM</time></p>
+            </div>
+            <button class="rk__proof" type="button" aria-label="Open the Google screenshot for Navigating New Residential Projects During the Greater Noida Real Estate Boom"><img src="assets/img/rank/serp-50.webp" alt="Google results for &quot;Navigating New Residential Projects During the Greater Noida Real Estate Boom&quot; showing Shubharambh Infra Advisors at #1, 19 Nov 2026 3:53 PM" width="799" height="632" loading="lazy" data-zoom><span>Proof</span></button>
+          </li>
+          <li class="rk rk--more" data-cat="insights">
+            <span class="rk__pos rk__pos--1" aria-label="Rank 1"><small>#</small>1</span>
+            <div class="rk__main">
+              <a class="rk__kw" href="https://www.google.com/search?q=Why+High+Street+Retail+And+Alpha+II+Are+Best+For+Greater+Noida+Commercial+Shop+Investments%3F" target="_blank" rel="noopener" title="Search this on Google now"><i data-lucide="search" aria-hidden="true"></i><span>Why High Street Retail And Alpha II Are Best For Greater Noida Commercial Shop Investments?</span><i data-lucide="arrow-up-right" class="rk__go" aria-hidden="true"></i></a>
+              <p class="rk__meta"><span class="rk__tag rk__tag--insights">Market insight</span><span class="rk__above"><i data-lucide="trending-up" aria-hidden="true"></i>Above Sigma Galleria, Mores</span><time>19 Nov 2026 · 3:53 PM</time></p>
+            </div>
+            <button class="rk__proof" type="button" aria-label="Open the Google screenshot for Why High Street Retail And Alpha II Are Best For Greater Noida Commercial Shop Investments?"><img src="assets/img/rank/serp-51.webp" alt="Google results for &quot;Why High Street Retail And Alpha II Are Best For Greater Noida Commercial Shop Investments?&quot; showing Shubharambh Infra Advisors at #1, 19 Nov 2026 3:53 PM" width="799" height="632" loading="lazy" data-zoom><span>Proof</span></button>
+          </li>
+          <li class="rk rk--more" data-cat="insights">
+            <span class="rk__pos rk__pos--1" aria-label="Rank 1"><small>#</small>1</span>
+            <div class="rk__main">
+              <a class="rk__kw" href="https://www.google.com/search?q=Sector-wise+Analysis+of+Luxury+and+Premium+Apartments+in+Gurgaon" target="_blank" rel="noopener" title="Search this on Google now"><i data-lucide="search" aria-hidden="true"></i><span>Sector-wise Analysis of Luxury and Premium Apartments in Gurgaon</span><i data-lucide="arrow-up-right" class="rk__go" aria-hidden="true"></i></a>
+              <p class="rk__meta"><span class="rk__tag rk__tag--insights">Market insight</span><span class="rk__above"><i data-lucide="trending-up" aria-hidden="true"></i>Above Optimal Realty, TREVOC Group</span><time>19 Nov 2026 · 3:55 PM</time></p>
+            </div>
+            <button class="rk__proof" type="button" aria-label="Open the Google screenshot for Sector-wise Analysis of Luxury and Premium Apartments in Gurgaon"><img src="assets/img/rank/serp-53.webp" alt="Google results for &quot;Sector-wise Analysis of Luxury and Premium Apartments in Gurgaon&quot; showing Shubharambh Infra Advisors at #1, 19 Nov 2026 3:55 PM" width="799" height="632" loading="lazy" data-zoom><span>Proof</span></button>
+          </li>
+          <li class="rk rk--more" data-cat="insights">
+            <span class="rk__pos rk__pos--1" aria-label="Rank 1"><small>#</small>1</span>
+            <div class="rk__main">
+              <a class="rk__kw" href="https://www.google.com/search?q=Emerging+Growth+Drivers+and+Best+Areas+for+Haridwar+Real+Estate+Trends+2026" target="_blank" rel="noopener" title="Search this on Google now"><i data-lucide="search" aria-hidden="true"></i><span>Emerging Growth Drivers and Best Areas for Haridwar Real Estate Trends 2026</span><i data-lucide="arrow-up-right" class="rk__go" aria-hidden="true"></i></a>
+              <p class="rk__meta"><span class="rk__tag rk__tag--insights">Market insight</span><span class="rk__above"><i data-lucide="trending-up" aria-hidden="true"></i>Above ETH Infra, Golden Avenue</span><time>19 Nov 2026 · 3:56 PM</time></p>
+            </div>
+            <button class="rk__proof" type="button" aria-label="Open the Google screenshot for Emerging Growth Drivers and Best Areas for Haridwar Real Estate Trends 2026"><img src="assets/img/rank/serp-54.webp" alt="Google results for &quot;Emerging Growth Drivers and Best Areas for Haridwar Real Estate Trends 2026&quot; showing Shubharambh Infra Advisors at #1, 19 Nov 2026 3:56 PM" width="799" height="632" loading="lazy" data-zoom><span>Proof</span></button>
+          </li>
+          <li class="rk rk--more" data-cat="insights">
+            <span class="rk__pos rk__pos--1" aria-label="Rank 1"><small>#</small>1</span>
+            <div class="rk__main">
+              <a class="rk__kw" href="https://www.google.com/search?q=Navigating+Haridwar+Commercial+Spaces+and+SIDCUL+Industrial+Area+ROI+Potential" target="_blank" rel="noopener" title="Search this on Google now"><i data-lucide="search" aria-hidden="true"></i><span>Navigating Haridwar Commercial Spaces and SIDCUL Industrial Area ROI Potential</span><i data-lucide="arrow-up-right" class="rk__go" aria-hidden="true"></i></a>
+              <p class="rk__meta"><span class="rk__tag rk__tag--insights">Market insight</span><span class="rk__above"><i data-lucide="trending-up" aria-hidden="true"></i>Above MK Property Advisor, ETH Infra</span><time>19 Nov 2026 · 4:02 PM</time></p>
+            </div>
+            <button class="rk__proof" type="button" aria-label="Open the Google screenshot for Navigating Haridwar Commercial Spaces and SIDCUL Industrial Area ROI Potential"><img src="assets/img/rank/serp-64.webp" alt="Google results for &quot;Navigating Haridwar Commercial Spaces and SIDCUL Industrial Area ROI Potential&quot; showing Shubharambh Infra Advisors at #1, 19 Nov 2026 4:02 PM" width="799" height="632" loading="lazy" data-zoom><span>Proof</span></button>
+          </li>
+          <li class="rk rk--more" data-cat="insights">
+            <span class="rk__pos rk__pos--1" aria-label="Rank 1"><small>#</small>1</span>
+            <div class="rk__main">
+              <a class="rk__kw" href="https://www.google.com/search?q=Haridwar+Highway+Property+Investment" target="_blank" rel="noopener" title="Search this on Google now"><i data-lucide="search" aria-hidden="true"></i><span>Haridwar Highway Property Investment</span><i data-lucide="arrow-up-right" class="rk__go" aria-hidden="true"></i></a>
+              <p class="rk__meta"><span class="rk__tag rk__tag--insights">Market insight</span><span class="rk__above"><i data-lucide="trending-up" aria-hidden="true"></i>Above 99acres, River Valley Township, RealEstateIndia</span><time>19 Nov 2026 · 4:03 PM</time></p>
+            </div>
+            <button class="rk__proof" type="button" aria-label="Open the Google screenshot for Haridwar Highway Property Investment"><img src="assets/img/rank/serp-66.webp" alt="Google results for &quot;Haridwar Highway Property Investment&quot; showing Shubharambh Infra Advisors at #1, 19 Nov 2026 4:03 PM" width="799" height="632" loading="lazy" data-zoom><span>Proof</span></button>
+          </li>
+          <li class="rk rk--more" data-cat="tools">
+            <span class="rk__pos rk__pos--2" aria-label="Rank 3"><small>#</small>3</span>
+            <div class="rk__main">
+              <a class="rk__kw" href="https://www.google.com/search?q=hectare+to+rood" target="_blank" rel="noopener" title="Search this on Google now"><i data-lucide="search" aria-hidden="true"></i><span>hectare to rood</span><i data-lucide="arrow-up-right" class="rk__go" aria-hidden="true"></i></a>
+              <p class="rk__meta"><span class="rk__tag rk__tag--tools">Free tool</span><span class="rk__above"><i data-lucide="trending-up" aria-hidden="true"></i>Above UnitJuggler, Kyle&#x27;s Converter, EasyCalculation</span><span class="rk__note">Only two unit-converter sites are above</span><time>19 Nov 2026 · 4:29 PM</time></p>
+            </div>
+            <button class="rk__proof" type="button" aria-label="Open the Google screenshot for hectare to rood"><img src="assets/img/rank/serp-71.webp" alt="Google results for &quot;hectare to rood&quot; showing Shubharambh Infra Advisors at #3, 19 Nov 2026 4:29 PM" width="799" height="494" loading="lazy" data-zoom><span>Proof</span></button>
+          </li>
+          <li class="rk rk--more" data-cat="brand">
+            <span class="rk__pos rk__pos--1" aria-label="Rank 1"><small>#</small>1</span>
+            <div class="rk__main">
+              <a class="rk__kw" href="https://www.google.com/search?q=Why+Choose+Shubharambh+Infra+Advisors+for+Noida+Property+Buying" target="_blank" rel="noopener" title="Search this on Google now"><i data-lucide="search" aria-hidden="true"></i><span>Why Choose Shubharambh Infra Advisors for Noida Property Buying</span><i data-lucide="arrow-up-right" class="rk__go" aria-hidden="true"></i></a>
+              <p class="rk__meta"><span class="rk__tag rk__tag--brand">Brand</span><span class="rk__note">All top 5 results are Shubharambh pages</span><time>15 Nov 2026 · 2:53 PM</time></p>
+            </div>
+            <button class="rk__proof" type="button" aria-label="Open the Google screenshot for Why Choose Shubharambh Infra Advisors for Noida Property Buying"><img src="assets/img/rank/serp-13.webp" alt="Google results for &quot;Why Choose Shubharambh Infra Advisors for Noida Property Buying&quot; showing Shubharambh Infra Advisors at #1, 15 Nov 2026 2:53 PM" width="1400" height="752" loading="lazy" data-zoom><span>Proof</span></button>
+          </li>
+        </ol>
+        <button class="btn btn--gray rk-more" id="rkMore" type="button" aria-expanded="false" aria-controls="rkList"><i data-lucide="chevron-down"></i><span>Show all 60 keywords</span></button>
+        <p class="ranks__note"><i data-lucide="info" aria-hidden="true"></i>Google results change with location, device and time. These are unedited screenshots taken from Delhi NCR on 15 and 19 Nov 2026; the ones from the afternoon of 19 Nov show the top of the results page and the result itself, joined at a dashed line where the page was too long for one shot. Tap a screenshot to see it full size, or a keyword to check today's live result.</p>
+      </div>
+    </section>
+    <!-- RANKINGS:END -->
+
+    <!-- ================= META ADS CASE STUDY ================= -->
+    <section class="ads" id="ads" aria-labelledby="ads-t">
+      <div class="ads__glow" aria-hidden="true"></div>
+      <div class="wrap">
+        <div class="idx"><b>05</b><span>Meta Ads case study · Shubharambh Infra Advisors</span><span class="idx__r">Since Mar 2026</span></div>
+        <h2 class="ads__title" id="ads-t"><span data-to="1149" data-sep="1">1,149</span> property leads.<br><span class="ads__title-2">₹288 each.</span></h2>
+        <p class="ads__sub">Facebook and Instagram lead-form campaigns I run for real estate projects in Vrindavan and Delhi NCR, since joining in March 2026. About <b>1 in 10 leads</b> became a site meeting with the sales team.</p>
+        <figure class="lead-dots" id="leadDots"><canvas aria-hidden="true"></canvas><figcaption><i data-lucide="mouse-pointer-2" aria-hidden="true"></i>Each dot is one real lead from Meta Ads. All 1,149 of them. Move your cursor through them.</figcaption></figure>
+
+        <!-- Funnel -->
+        <div class="funnel reveal" role="list" aria-label="Property campaign funnel">
+          <div class="funnel__step" role="listitem" style="--w:100%">
+            <span class="funnel__icon"><i data-lucide="eye"></i></span>
+            <span class="funnel__txt"><b data-to="505" data-suf="K">505K</b><small>Ad impressions</small></span>
+          </div>
+          <p class="funnel__rate"><i data-lucide="arrow-down"></i>About 1 lead per 440 impressions</p>
+          <div class="funnel__step" role="listitem" style="--w:72%">
+            <span class="funnel__icon"><i data-lucide="file-pen-line"></i></span>
+            <span class="funnel__txt"><b data-to="1149" data-sep="1">1,149</b><small>Leads with name and phone number</small></span>
+          </div>
+          <p class="funnel__rate"><i data-lucide="arrow-down"></i>About 1 in 10 met the sales team</p>
+          <div class="funnel__step funnel__step--win" role="listitem" style="--w:46%">
+            <span class="funnel__icon"><i data-lucide="handshake"></i></span>
+            <span class="funnel__txt"><b>≈ 115</b><small>Site meetings (approx.)</small></span>
+          </div>
+        </div>
+
+        <dl class="astats">
+          <div class="reveal"><dt><i data-lucide="wallet"></i>Ad spend</dt><dd>₹3.30L</dd><small>on property campaigns</small></div>
+          <div class="reveal"><dt><i data-lucide="users"></i>Property leads</dt><dd><span data-to="1149" data-sep="1">1,149</span></dd><small>from 10 campaigns</small></div>
+          <div class="reveal"><dt><i data-lucide="indian-rupee"></i>Cost per lead</dt><dd>₹288</dd><small>average · best campaign ₹222</small></div>
+          <div class="reveal"><dt><i data-lucide="handshake"></i>Cost per meeting</dt><dd>≈ ₹2.9k</dd><small>estimate, at about 1 meeting per 10 leads</small></div>
+        </dl>
+
+        <div class="calc" id="leadCalc">
+          <div class="calc__head"><h3>What would your budget get you?</h3><p>Move the slider. Based on my real 2026 averages: ₹288 per lead, about 1 site meeting per 10 leads.</p></div>
+          <label class="calc__label" for="calcBudget"><span>Monthly ad budget</span><output id="calcBudgetOut" for="calcBudget">₹50,000</output></label>
+          <input type="range" id="calcBudget" min="10000" max="500000" step="5000" value="50000">
+          <div class="calc__scale" aria-hidden="true"><span>₹10k</span><span>₹5L</span></div>
+          <div class="calc__out"><div><b id="calcLeads">174</b><span>leads a month</span></div><div><b id="calcMeet">17</b><span>site meetings</span></div><div><b id="calcPer">≈ ₹2,941</b><span>per meeting</span></div></div>
+          <div class="calc__foot"><a class="btn btn--blue" id="calcCta" href="https://wa.me/919518848804" target="_blank" rel="noopener"><i data-lucide="message-circle" aria-hidden="true"></i>Plan this for my business</a><p>An estimate from my own campaigns. Real results depend on the project, location and offer.</p></div>
+        </div>
+
+        <div class="lb reveal">
+          <div class="lb__head">
+            <h3>Campaigns <span>Leads and cost per lead, from Ads Manager</span></h3>
+            <div class="lb__legend"><span class="cpl cpl--good">under ₹250</span><span class="cpl cpl--ok">₹250–350</span><span class="cpl cpl--high">over ₹350</span></div>
+          </div>
+          <ol class="lb__list">
+            <li><span class="lb__name">Vrindavan · Apr 20 · A</span><span class="lb__bar" style="--w:100%"></span><span class="lb__n">260</span><span class="cpl cpl--ok">₹284</span></li>
+            <li><span class="lb__name">Vrindavan · Apr 20 · B</span><span class="lb__bar" style="--w:85%"></span><span class="lb__n">221</span><span class="cpl cpl--ok">₹323</span></li>
+            <li><span class="lb__name">Vrindavan · Apr 20 · C</span><span class="lb__bar" style="--w:75.4%"></span><span class="lb__n">196</span><span class="cpl cpl--good">₹232</span></li>
+            <li><span class="lb__name">Vrindavan · Apr 20 · D</span><span class="lb__bar" style="--w:58.8%"></span><span class="lb__n">153</span><span class="cpl cpl--ok">₹289</span></li>
+            <li><span class="lb__name">Vrindavan · New Vaishali · A</span><span class="lb__bar" style="--w:45%"></span><span class="lb__n">117</span><span class="cpl cpl--ok">₹324</span></li>
+            <li><span class="lb__name">SVG-1 · Apr 18 · A</span><span class="lb__bar" style="--w:35.4%"></span><span class="lb__n">92</span><span class="cpl cpl--good">₹222</span></li>
+            <li><span class="lb__name">SVG-1 · Apr 18 · B</span><span class="lb__bar" style="--w:19.2%"></span><span class="lb__n">50</span><span class="cpl cpl--ok">₹269</span></li>
+            <li><span class="lb__name">Eternia · Apr 20</span><span class="lb__bar" style="--w:15.4%"></span><span class="lb__n">40</span><span class="cpl cpl--ok">₹260</span></li>
+            <li><span class="lb__name">Eldigo · May 30</span><span class="lb__bar" style="--w:4.2%"></span><span class="lb__n">11</span><span class="cpl cpl--high">₹518</span></li>
+            <li><span class="lb__name">Vrindavan · New Vaishali · B</span><span class="lb__bar" style="--w:3.5%"></span><span class="lb__n">9</span><span class="cpl cpl--high">₹854</span></li>
+          </ol>
+        </div>
+
+        <div class="ads__extra">
+          <article class="xcard reveal">
+            <span class="xcard__icon"><i data-lucide="user-plus"></i></span>
+            <div><h4>Hiring campaigns too</h4><p><b>961 job applicants at ₹18 each</b> for sales roles in Noida and Faridabad, from 2 campaigns and ₹17.8k spend.</p></div>
+          </article>
+          <article class="xcard reveal">
+            <span class="xcard__icon"><i data-lucide="clapperboard"></i></span>
+            <div><h4>Creatives that stop the scroll</h4><p>Video <b>hook rate up to 39.7%</b> and <b>hold rate up to 37.6%</b>. Lowest property CPM: <b>₹250</b>.</p></div>
+          </article>
+        </div>
+
+        <div class="ads-proof reveal">
+          <div class="seg seg--light" role="tablist" aria-label="Ads Manager screenshots">
+            <button role="tab" class="seg__btn ads-tab is-active" aria-selected="true" data-img="assets/img/ads/meta-leads.webp" data-w="1367" data-h="628" data-alt="Meta Ads Manager: leads and cost per lead for Shubharambh campaigns">Leads &amp; cost</button>
+            <button role="tab" class="seg__btn ads-tab" aria-selected="false" data-img="assets/img/ads/meta-reach.webp" data-w="1344" data-h="628" data-alt="Meta Ads Manager: spend, reach, CPM, hook rate and hold rate">Reach &amp; hook rate</button>
+          </div>
+          <p class="note note--ads reveal" aria-hidden="true"><span>real Ads Manager,<br>not a mockup</span><svg class="note__arrow" viewBox="0 0 70 100" aria-hidden="true"><path d="M30 6c-14 22 18 36 4 60-3 6-6 12-6 26"/><path d="M16 80l12 14 12-14"/></svg></p>
+          <figure class="ads-frame">
+            <div class="ads-frame__bar"><i></i><i></i><i></i><span>adsmanager.facebook.com · Shubharambh Infra Advisors</span></div>
+            <img id="adsImg" src="assets/img/ads/meta-leads.webp" alt="Meta Ads Manager: leads and cost per lead for Shubharambh campaigns" width="1367" height="628" loading="lazy" data-zoom>
+          </figure>
+          <p class="ads-proof__cap"><i data-lucide="badge-check"></i>Real Meta Ads Manager screenshots. The date filter is set wide; the campaigns in it are the ones I've run since March 2026. It shows 12 of the account's 15 campaigns, and all totals above are calculated from those 12. Tap to enlarge.</p>
+        </div>
+
+        <!-- Freelance client campaigns (2025), from the Meta Ads app -->
+        <div class="older reveal">
+          <p class="older__eyebrow"><i data-lucide="briefcase"></i>Freelance · real estate client · 2025</p>
+          <h3 class="older__title"><span data-to="1224" data-sep="1">1,224</span> property leads for a client. <span class="older__dim">₹4.88L spent, ₹399 per lead.</span></h3>
+          <div class="older__wrap">
+            <figure class="mphone">
+              <div class="mphone__body">
+                <span class="mphone__island" aria-hidden="true"></span>
+                <img src="assets/img/ads/meta-mobile.webp" alt="Real Meta Ads app screenshot: Eternia 948 leads at ₹371.74, Iris Trehan 87 leads at ₹453.61, Omaxe Center Point 189 leads at ₹508.53" width="312" height="542" loading="lazy" data-zoom>
+              </div>
+              <figcaption><i data-lucide="badge-check"></i>Real screenshot from the Meta Ads app · client's name blurred · tap to enlarge</figcaption>
+            </figure>
+
+            <ul class="olist">
+              <li class="olist__hero">
+                <span class="olist__n" data-to="948">948</span>
+                <span class="olist__t"><b>leads from one campaign</b>Eternia, July 2025 · ₹371.74 per lead · ₹3.52L spent</span>
+              </li>
+              <li>
+                <span class="olist__n" data-to="189">189</span>
+                <span class="olist__t"><b>leads</b>Omaxe Center Point, Sept 2025 · ₹508.53 per lead</span>
+              </li>
+              <li>
+                <span class="olist__n" data-to="87">87</span>
+                <span class="olist__t"><b>leads</b>Iris Trehan, Aug 2025 · ₹453.61 per lead</span>
+              </li>
+            </ul>
+          </div>
+          <div class="total-strip">
+            <span class="total-strip__icon"><i data-lucide="sigma"></i></span>
+            <p><b>Together: <span data-to="2373" data-sep="1">2,373</span> property leads from ₹8.18L of ad spend.</b> Shubharambh campaigns (2026) plus this freelance client (2025), from Meta Ads Manager and the Meta Ads app.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= RESUME ================= -->
+    <section class="sec" id="resume" aria-labelledby="resume-t">
+      <div class="wrap">
+        <div class="idx"><b>06</b><span>Resume</span><span class="idx__r">Feb 2023 – now</span></div>
+        <h2 class="sec__title" id="resume-t">Resume. <span class="dim">What I do and where I've done it.</span></h2>
+
+        <div class="svc">
+          <article class="svc__card reveal"><span class="tile__icon tile__icon--blue"><i data-lucide="code-xml"></i></span><h3>Full stack development</h3><p>Websites, web apps, stores and CRMs. Django / DRF and PHP back ends, REST APIs, payments, admin panels, role-based access.</p></article>
+          <article class="svc__card reveal"><span class="tile__icon tile__icon--green"><i data-lucide="search"></i></span><h3>SEO</h3><p>Technical and on-page SEO, local SEO, Semrush keyword research, and tools that pull in search traffic.</p></article>
+          <article class="svc__card reveal"><span class="tile__icon tile__icon--orange"><i data-lucide="megaphone"></i></span><h3>Meta &amp; Google Ads</h3><p>Lead generation on Facebook, Instagram, Search, Display, YouTube and LinkedIn. Funnels, retargeting, A/B tests.</p></article>
+          <article class="svc__card reveal"><span class="tile__icon tile__icon--purple"><i data-lucide="workflow"></i></span><h3>Tracking &amp; automation</h3><p>Meta Pixel + Conversion API, GA4 and Tag Manager, WhatsApp API follow-ups, Zapier and CRM workflows.</p></article>
+        </div>
+
+        <div class="stack reveal">
+          <div><h4><i data-lucide="terminal"></i>Development</h4><ul class="chips"><li>Python</li><li>Django</li><li>DRF</li><li>PHP</li><li>JavaScript</li><li>React</li><li>Node.js</li><li>HTML</li><li>CSS</li><li>Bootstrap</li><li>MySQL</li><li>WordPress</li><li>Chrome Extensions</li></ul></div>
+          <div><h4><i data-lucide="target"></i>Marketing</h4><ul class="chips"><li>Meta Business Manager</li><li>Google Ads</li><li>LinkedIn Ads</li><li>GA4</li><li>Tag Manager</li><li>Meta Pixel</li><li>Conversion API</li><li>Semrush</li><li>WhatsApp API</li><li>Zapier</li><li>Canva</li></ul></div>
+          <div><h4><i data-lucide="server"></i>Tools &amp; hosting</h4><ul class="chips"><li>Git</li><li>GitHub</li><li>VS Code</li><li>Linux</li><li>cPanel</li><li>Hostinger</li></ul></div>
+        </div>
+
+        <h3 class="list-title">Experience <span>3+ years across 4 companies</span></h3>
+        <ol class="xp">
+          <li class="xp__row xp__row--now">
+            <div class="xp__when"><span class="xp__now"><i aria-hidden="true"></i>Current role</span><time>Mar 2026 – now</time></div>
+            <article class="job job--now">
+              <h4 class="xp__role">Full Stack Developer &amp; Digital Marketing Specialist</h4>
+              <p class="xp__org"><b>Shubharambh Infra Advisors</b> · Noida</p>
+              <ul class="xp__wins">
+                <li><b>#1</b><span>on Google for 55 keywords</span></li>
+                <li><b>1.22M</b><span>Google impressions in 6 months</span></li>
+                <li><b>1,149</b><span>Meta property leads at ₹288</span></li>
+                <li><b>≈ 115</b><span>site meetings from those leads</span></li>
+              </ul>
+              <ul class="job__list">
+                <li>Built shubharambhinfraadvisors.com, with project search, WhatsApp enquiries, an EMI calculator and converters for 25 area units and 12 length units.</li>
+                <li>Grew Google impressions from 3.43k to 1.22M in six months with converter tools, local SEO and project pages.</li>
+                <li>Ranked #1 on Google for 55 keywords, including "Best Property Advisor in Noida" and "Real Estate Consultant in Noida", above IBEF, CBRE, Justdial, The Times of India, M3M and 99acres.</li>
+                <li>Ran Meta lead-form campaigns for projects in Vrindavan and Delhi NCR: 1,149 property leads at ₹288 each, with about 1 in 10 becoming a site meeting.</li>
+                <li>Ran hiring campaigns that brought in 961 sales job applicants at ₹18 each.</li>
+              </ul>
+            </article>
+          </li>
+          <li class="xp__row">
+            <div class="xp__when"><time>Sep 2024 – Mar 2026</time><small>1 yr 6 mos</small></div>
+            <article class="job">
+              <h4 class="xp__role">Full Stack Developer &amp; Digital Marketing Specialist</h4>
+              <p class="xp__org"><b>Matrix Acres Pvt. Ltd.</b> · Noida</p>
+              <ul class="job__list">
+                <li>Built and maintained a custom CRM with 300+ modules (PHP &amp; MySQL): leads, dashboards, reports and role-based access.</li>
+                <li>Designed and developed the company website, matrixacres.in.</li>
+                <li>Managed ₹10L+ ad spend on Meta and Google for projects by Godrej, M3M, Bhutani and Prestige.</li>
+                <li>Set up Meta Pixel, Conversion API, event tracking and automated CRM lead flows.</li>
+              </ul>
+            </article>
+          </li>
+          <li class="xp__row">
+            <div class="xp__when"><time>Feb 2024 – Aug 2024</time><small>6 mos</small></div>
+            <article class="job">
+              <h4 class="xp__role">Web Developer &amp; Digital Marketing</h4>
+              <p class="xp__org"><b>Ryoto Electrix</b> · EV company</p>
+              <ul class="job__list">
+                <li>Built the company website in Python Django, including forms, database and backend logic.</li>
+                <li>Ran EV lead generation on Meta and Google Ads for B2B dealership and customer enquiries.</li>
+                <li>Created and optimized landing pages for higher conversions.</li>
+              </ul>
+            </article>
+          </li>
+          <li class="xp__row">
+            <div class="xp__when"><time>Feb 2023 – Feb 2024</time><small>1 yr</small></div>
+            <article class="job">
+              <h4 class="xp__role">Python / PHP Full Stack Developer</h4>
+              <p class="xp__org"><b>Xaas Technologies</b></p>
+              <ul class="job__list">
+                <li>Developed full-stack web applications and backend services, including APIs, database design and deployment.</li>
+                <li>Ran paid campaigns for web services and IT clients, and set up CRM workflows for lead distribution.</li>
+              </ul>
+            </article>
+          </li>
+        </ol>
+
+        <div class="creds">
+          <div class="reveal">
+            <h3 class="list-title">Certifications</h3>
+            <ul class="glist">
+              <li><a href="https://app-na2.hubspot.com/academy/achievements/mnpp1nf2/en/1/anek-kumar/digital-marketing" target="_blank" rel="noopener"><span class="ilist__icon" style="--c:#ff7a59"><i data-lucide="award"></i></span><span><b>Digital Marketing</b><small>HubSpot Academy</small></span><em>Verify<i data-lucide="arrow-up-right"></i></em></a></li>
+              <li><a href="https://app-na2.hubspot.com/academy/achievements/gv93qnbc/en/1/anek-kumar/content-marketing-certified" target="_blank" rel="noopener"><span class="ilist__icon" style="--c:#ff7a59"><i data-lucide="award"></i></span><span><b>Content Marketing</b><small>HubSpot Academy</small></span><em>Verify<i data-lucide="arrow-up-right"></i></em></a></li>
+              <li><div><span class="ilist__icon" style="--c:#3776ab"><i data-lucide="badge-check"></i></span><span><b>Python Full Stack Development</b><small>APTRON, Noida</small></span></div></li>
+            </ul>
+          </div>
+          <div class="reveal">
+            <h3 class="list-title">Education</h3>
+            <ul class="glist">
+              <li><div><span class="ilist__icon" style="--c:#8e8e93"><i data-lucide="graduation-cap"></i></span><span><b>B.Sc. in Mathematics</b><small>Dr. Bhimrao Ambedkar University, Agra · 2018–2021</small></span></div></li>
+              <li><div><span class="ilist__icon" style="--c:#8e8e93"><i data-lucide="school"></i></span><span><b>Class XII</b><small>Uttar Pradesh Board · 2017</small></span></div></li>
+              <li><div><span class="ilist__icon" style="--c:#8e8e93"><i data-lucide="school"></i></span><span><b>Class X</b><small>Uttar Pradesh Board · 2015</small></span></div></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="cv reveal">
+          <div><h3>Download my CV</h3><p>One CV with development, SEO and Meta Ads. Updated Nov 2026 · 2 pages · PDF</p></div>
+          <div class="cv__btns">
+            <a class="btn btn--blue" href="assets/cv/Anek-Kumar-CV.pdf" download="Anek-Kumar-CV.pdf"><i data-lucide="download"></i>Download CV</a>
+            <a class="btn btn--gray" href="assets/cv/Anek-Kumar-CV.pdf" target="_blank" rel="noopener"><i data-lucide="eye"></i>View CV</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+    <section class="sec contact" id="contact" aria-labelledby="contact-t">
+      <div class="wrap">
+        <div class="idx"><b>07</b><span>Contact</span><span class="idx__r">WhatsApp · email · call</span></div>
+        <h2 class="contact__title reveal" id="contact-t">Let's build something <span class="blue scribbled">that sells.<svg class="scribble-under" viewBox="0 0 300 24" preserveAspectRatio="none" aria-hidden="true"><path d="M4 16c60-10 140-14 210-8 28 2 52 6 82 4"/></svg></span></h2>
+        <p class="nowline"><span class="nowline__dot" aria-hidden="true"></span><span id="nowText">Noida, India</span></p>
+        <div class="contact__grid">
+          <ul class="glist glist--big reveal">
+            <li><a href="https://wa.me/919518848804?text=Hi%20Anek%2C%20I%20saw%20your%20portfolio" target="_blank" rel="noopener"><span class="ilist__icon" style="--c:#25d366"><i data-lucide="message-circle"></i></span><span><b>WhatsApp</b><small>+91 95188 48804</small></span><i data-lucide="chevron-right" class="chev"></i></a></li>
+            <li><a href="mailto:anekkumar9518@gmail.com"><span class="ilist__icon" style="--c:#1a82fb"><i data-lucide="mail"></i></span><span><b>Email</b><small>anekkumar9518@gmail.com</small></span><i data-lucide="chevron-right" class="chev"></i></a></li>
+            <li><a href="tel:+919518848804"><span class="ilist__icon" style="--c:#30b257"><i data-lucide="phone"></i></span><span><b>Call</b><small>+91 95188 48804</small></span><i data-lucide="chevron-right" class="chev"></i></a></li>
+            <li><a href="https://github.com/Anekkumar9518" target="_blank" rel="noopener"><span class="ilist__icon" style="--c:#24292f"><i data-lucide="github"></i></span><span><b>GitHub</b><small>github.com/Anekkumar9518</small></span><i data-lucide="chevron-right" class="chev"></i></a></li>
+            <li><div><span class="ilist__icon" style="--c:#ff9f0a"><i data-lucide="map-pin"></i></span><span><b>Location</b><small>Noida, Delhi NCR</small></span></div></li>
+          </ul>
+
+          <form class="form reveal" id="waForm" novalidate>
+            <h3>Send a message</h3>
+            <p class="form__note">Send it on WhatsApp, or by email if you prefer.</p>
+            <label for="f-name">Name</label>
+            <input id="f-name" type="text" name="name" required autocomplete="name" placeholder="Your name">
+            <label for="f-need">What do you need?</label>
+            <select id="f-need" name="need"><option>A website</option><option>An e-commerce store</option><option>A CRM or web app</option><option>SEO</option><option>Meta or Google Ads</option><option>A full-time role</option><option>Something else</option></select>
+            <label for="f-msg">Message</label>
+            <textarea id="f-msg" name="msg" rows="4" placeholder="A few lines about your project"></textarea>
+            <div class="form__send">
+              <button class="btn btn--blue" type="submit" data-magnet><i data-lucide="message-circle"></i>Send on WhatsApp</button>
+              <button class="btn btn--gray" type="button" id="mailSend"><i data-lucide="mail"></i>Send by email</button>
+            </div>
+            <p class="form__error" id="formError" role="alert"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PLAYGROUND ================= -->
+    <section class="sec play" id="playground" aria-labelledby="play-t">
+      <div class="wrap">
+        <div class="idx"><b>+</b><span>Bonus</span><span class="idx__r">Desktop + touch</span></div>
+        <h2 class="sec__title" id="play-t">One more thing. <span class="dim">A small game I built, if you have a minute.</span></h2>
+        <div class="play__grid">
+          <div class="console reveal">
+            <div class="console__top"><span class="console__led" id="gLed"></span><span class="console__name">LEAD SNAKE</span><span class="console__brand">AK·OS</span></div>
+            <div class="console__screen" id="gScreen">
+              <canvas id="snake" width="400" height="400" tabindex="0" aria-label="Lead Snake game. Use arrow keys or swipe to move."></canvas>
+              <div class="console__overlay" id="gOverlay">
+                <p class="console__title" id="gTitle">Lead Snake</p>
+                <p class="console__sub" id="gSub">Eat the leads, don't hit the wall or your own tail. A gold #1 is worth 5 leads.</p>
+                <button class="btn btn--blue" id="gStart" type="button"><i data-lucide="play"></i>Start game</button>
+                <p class="console__keys">Arrow keys or WASD · swipe on mobile</p>
+              </div>
+            </div>
+            <div class="console__hud"><span>Leads <b id="gScore">0</b></span><span>Best <b id="gBest">0</b></span><span>Speed <b id="gSpeed">1</b></span></div>
+            <div class="console__pad" role="group" aria-label="Game controls">
+              <button type="button" data-dir="up" aria-label="Move up"><i data-lucide="chevron-up"></i></button>
+              <button type="button" data-dir="left" aria-label="Move left"><i data-lucide="chevron-left"></i></button>
+              <button type="button" data-dir="down" aria-label="Move down"><i data-lucide="chevron-down"></i></button>
+              <button type="button" data-dir="right" aria-label="Move right"><i data-lucide="chevron-right"></i></button>
+            </div>
+          </div>
+
+          <div class="play__side reveal">
+            <h3>How to play</h3>
+            <ul class="play__rules">
+              <li><span class="pr-ic pr-ic--lead" aria-hidden="true"></span><span><b>Green dot</b> is one lead.</span></li>
+              <li><span class="pr-ic pr-ic--gold" aria-hidden="true">#1</span><span><b>Gold #1</b> is a Google ranking, worth 5 leads.</span></li>
+              <li><span class="pr-ic pr-ic--speed" aria-hidden="true"><i data-lucide="zap"></i></span><span>The snake gets <b>faster</b> every 5 leads.</span></li>
+            </ul>
+            <div class="play__value">
+              <small>Your leads would cost</small>
+              <b id="gValue">₹0</b>
+              <small>at ₹288 per lead, my real average on Meta Ads</small>
+            </div>
+            <a class="btn btn--gray" href="#ads"><i data-lucide="megaphone"></i>See the real campaigns</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <div class="wrap">
+      <a class="foot__big" href="#home" aria-label="Back to top">anekkumar<span>.in</span></a>
+      <div class="foot__in">
+        <span>© <span id="year">2026</span> Anek Kumar</span>
+        <span>Full Stack Developer &amp; Digital Marketer · Noida</span>
+        <span>Results shown are from unedited Google &amp; Meta screenshots.</span>
+        <span class="foot__keys"><button type="button" data-cmdk>Ctrl K menu</button><button type="button" data-install>Install as app</button><button type="button" data-ach>Achievements</button><span>Psst: press <kbd>`</kbd>, or try the Konami code.</span></span>
+      </div>
+    </div>
+  </footer>
+  <img class="peek" id="peek" alt="" aria-hidden="true">
+  <nav class="jump" id="jump" aria-label="Jump to top or bottom">
+    <button class="jump__btn" id="jumpUp" type="button" aria-label="Back to top" disabled><i data-lucide="arrow-up" aria-hidden="true"></i></button>
+    <span class="jump__pct" id="jumpPct" aria-hidden="true">0%</span>
+    <button class="jump__btn" id="jumpDown" type="button" aria-label="Go to the bottom"><i data-lucide="arrow-down" aria-hidden="true"></i></button>
+  </nav>
+
+  <!-- Project sheet -->
+  <dialog class="sheet" id="sheet" aria-labelledby="sheetTitle">
+    <div class="sheet__grab" id="sheetGrab" aria-hidden="true"><span></span></div>
+    <button class="sheet__close round" id="sheetClose" aria-label="Close"><i data-lucide="x"></i></button>
+    <div class="sheet__body" id="sheetBody"></div>
+  </dialog>
+
+  <dialog class="lightbox" id="lightbox" aria-label="Screenshot, full size">
+    <form method="dialog"><button class="sheet__close round" aria-label="Close"><i data-lucide="x"></i></button></form>
+    <img id="lightboxImg" src="" alt="">
+  </dialog>
+
+  <script src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js"></script>
+  <script src="assets/js/main.js" defer></script>
+  <script src="assets/js/extras.js" defer></script>
+  <script src="assets/js/android.js" defer></script>
+  <script src="assets/js/android-apps.js" defer></script>
+  <script src="assets/js/android-more.js" defer></script>
+  <script src="assets/js/fun.js" defer></script>
+  <div class="cursor" id="cursor" aria-hidden="true"><div class="cursor__dot"></div><div class="cursor__ring"><span class="cursor__label" id="cursorLabel"></span></div></div>
+</body>
+</html>

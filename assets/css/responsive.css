@@ -1,0 +1,93 @@
+/* =========================================================
+   Responsive refinements (loaded last).
+   Goal on phones: same content, far less scrolling.
+   ========================================================= */
+
+/* rankings: show the first 6, then "Show all" */
+.rk-list:not(.is-all) .rk--more { display: none; }
+.rk-more { margin: 14px auto 0; display: flex; width: fit-content; }
+.rk-more svg.lucide { transition: transform .3s ease; }
+.rk-more[aria-expanded="true"] svg.lucide { transform: rotate(180deg); }
+.rk-more[hidden] { display: none; }
+
+/* experience: older jobs can collapse on small screens */
+.job__toggle { display: none; }
+
+/* ---------- tablets ---------- */
+@media (max-width: 1060px) and (min-width: 761px) {
+  .rk__proof { width: 140px; height: 84px; }
+}
+
+/* ---------- phones ---------- */
+@media (max-width: 760px) {
+  .sec { padding: 64px 0; }
+  .results, .ranks, .ads { padding-top: 76px; padding-bottom: 68px; }
+  .sec__title { margin-bottom: 26px; }
+
+  /* filter tabs scroll sideways: show a fade so it's obvious */
+  .rk-filters { -webkit-mask-image: linear-gradient(90deg, #000 85%, transparent); mask-image: linear-gradient(90deg, #000 85%, transparent); scrollbar-width: none; }
+  .rk-filters::-webkit-scrollbar { display: none; }
+  .rk-filters .seg__btn { flex: none; }
+
+  /* ranking rows: small proof thumbnail on the right instead of a full-width image */
+  .rk { grid-template-columns: auto minmax(0, 1fr) 68px; gap: 12px; padding: 12px; align-items: start; }
+  .rk__proof { grid-column: 3; grid-row: 1; width: 68px; height: 68px; border-radius: 12px; }
+  .rk__proof img { width: 300%; left: -16%; top: -14%; }
+  .rk__proof span { left: 4px; right: 4px; bottom: 4px; padding: 2px 0; text-align: center; font-size: 10px; }
+  .rk__meta { gap: 4px 10px; }
+  .rk__meta .rk__above { flex-basis: 100%; }
+}
+
+@media (max-width: 600px) {
+  .job:not(.job--now) .job__list li:nth-child(n+3) { display: none; }
+  .job:not(.job--now).is-open .job__list li { display: block; }
+  .job__toggle { display: inline-flex; align-items: center; gap: 4px; margin-top: 10px; padding: 0; border: 0; background: none; color: var(--blue-text); font-size: 14.5px; font-weight: 600; min-height: 32px; }
+  .job__toggle svg.lucide { width: 16px; height: 16px; transition: transform .25s; }
+  .job.is-open .job__toggle svg.lucide { transform: rotate(180deg); }
+}
+
+@media (max-width: 520px) {
+  /* bento: two small tiles per row, big ones full width */
+  .bento { grid-template-columns: 1fr 1fr; gap: 10px; grid-auto-flow: dense; }
+  .bento .tile--wide, .bento .tile--chart, .bento .tile--blue, .bento .tile--orange { grid-column: 1 / -1; }
+  .bento .tile { padding: 18px; border-radius: 22px; gap: 6px; min-height: 0; }
+  .bento .tile .tile__big { font-size: 38px; }
+  .bento .tile .tile__big--sm { font-size: 22px; letter-spacing: -0.02em; }
+  .bento .tile h3 { font-size: 21px; }
+  .bento .tile p { font-size: 14.5px; }
+  .bento .tile .tile__label { font-size: 13.5px; }
+  .bento .tile__icon { width: 36px; height: 36px; border-radius: 11px; margin-bottom: 2px; }
+  .bento .tile__icon svg.lucide { width: 19px; height: 19px; }
+  .bento .tile__wm { width: 110px !important; height: 110px !important; right: -20px; bottom: -20px; }
+  .bento .mini-tl li { font-size: 13.5px; padding-top: 7px; }
+
+  /* "How the traffic came": two per row */
+  .how { grid-template-columns: 1fr 1fr; gap: 10px; }
+  .how__card { padding: 16px; border-radius: 18px; gap: 6px; }
+  .how__icon { width: 36px; height: 36px; border-radius: 11px; margin-bottom: 4px; }
+  .how__icon svg.lucide { width: 19px; height: 19px; }
+  .how__card h4 { font-size: 16px; }
+  .how__card p { font-size: 13.5px; }
+
+  /* services: icon on the left, compact */
+  .svc { grid-template-columns: 1fr; gap: 10px; }
+  .svc__card { display: grid; grid-template-columns: 40px 1fr; gap: 4px 14px; align-items: start; padding: 18px; border-radius: 20px; }
+  .svc__card .tile__icon { grid-row: span 2; width: 40px; height: 40px; margin: 2px 0 0; }
+  .svc__card h3 { font-size: 18px; }
+  .svc__card p { font-size: 14.5px; }
+
+  .stack > div { padding: 18px; border-radius: 20px; }
+  .rstats > div, .astats > div { padding: 16px; }
+  .results__h3, .rk-head { margin-top: 56px; }
+  .older { margin-top: 64px; }
+  .ads-proof { margin-top: 40px; }
+}
+
+@media (max-width: 380px) {
+  .hero__title { font-size: 50px; }
+  .bento .tile .tile__big { font-size: 32px; }
+  .rk { grid-template-columns: auto minmax(0, 1fr) 56px; gap: 10px; }
+  .rk__proof { width: 56px; height: 56px; }
+  .rk__pos { width: 42px; height: 42px; font-size: 20px; }
+  .console__hud span { flex-direction: column; align-items: flex-start; gap: 2px; }
+}

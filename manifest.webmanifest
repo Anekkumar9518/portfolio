@@ -1,0 +1,19 @@
+{
+  "name": "Anek Kumar — Full Stack Developer & Digital Marketer",
+  "short_name": "Anek Kumar",
+  "description": "Websites that bring customers: development, SEO and Meta Ads. Live projects and real results.",
+  "start_url": "./?source=app",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#0d0d0c",
+  "theme_color": "#0d0d0c",
+  "icons": [
+    { "src": "assets/img/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "assets/img/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "assets/img/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ],
+  "shortcuts": [
+    { "name": "Message on WhatsApp", "url": "https://wa.me/919518848804" },
+    { "name": "Download CV", "url": "./assets/cv/Anek-Kumar-CV.pdf" }
+  ]
+}
