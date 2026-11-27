@@ -274,7 +274,7 @@
   /* =========================================================
      5. Terminal
      ========================================================= */
-  const KEYWORDS = ["Best Property Advisor in Noida", "Real Estate Consultant in Noida RERA-Registered Advisory", "New Commercial Property for Sale in Noida for 2026", "Noida's Most Exclusive Luxury Flats In Sector 94", "How to Safely Buy a Home in India", "5 Most Expensive Homes in Noida"];
+  const KEYWORDS = ["Best Property Advisor in Noida", "2 Crore on Noida Expressway", "Real Estate Consultant in Noida RERA-Registered Advisory", "New Commercial Property for Sale in Noida for 2026", "Noida's Most Exclusive Luxury Flats In Sector 94", "How to Safely Buy a Home in India", "5 Most Expensive Homes in Noida"];
   let term = null;
   const termOpen = () => {
     if (!term) {
@@ -290,8 +290,8 @@
         skills: () => print("<b>code</b>     Python, Django, DRF, PHP, MySQL, JavaScript, React, Node.js<br><b>growth</b>   SEO, Meta Ads, Google Ads, Pixel + Conversion API, GA4, GTM<br><b>tools</b>    Git, Linux, cPanel, Hostinger, WhatsApp API, Zapier"),
         experience: () => print("2026 – now  Shubharambh Infra Advisors<br>2024 – 26   Matrix Acres<br>2024        Ryoto Electrix<br>2023 – 24   Xaas Technologies"),
         projects: () => print("shubharambhinfraadvisors.com · matrixacres.in · visionwavetechnology.com · lmcstore.in · harisabziwala.com · ezzycommerce.store · allfiles.space · github.com/Anekkumar9518/devtab (Chrome extension)"),
-        results: () => print("<b>SEO</b>   3.43k → 1.22M Google impressions in 6 months · #1 for 55 keywords<br><b>Ads</b>   1,149 property leads at ₹288 each · ≈ 1 in 10 became a site meeting"),
-        rankings: () => print(KEYWORDS.map((k) => `<span class="ok">#1</span> ${esc(k)}`).join("<br>") + "<br>… 55 keywords at #1. Type <b>cd rankings</b> to see all."),
+        results: () => print("<b>SEO</b>   3.43k → 1.22M Google impressions in 6 months · #1 for 56 keywords<br><b>Ads</b>   1,149 property leads at ₹288 each · ≈ 1 in 10 became a site meeting"),
+        rankings: () => print(KEYWORDS.map((k) => `<span class="ok">#1</span> ${esc(k)}`).join("<br>") + "<br>… 56 keywords at #1. Type <b>cd rankings</b> to see all."),
         contact: () => print(`WhatsApp/call  +91 95188 48804<br>Email          anekkumar9518@gmail.com<br>GitHub         github.com/Anekkumar9518`),
         cv: () => { print("Downloading Anek-Kumar-CV.pdf …", "ok"); const a = document.createElement("a"); a.href = "assets/cv/Anek-Kumar-CV.pdf"; a.download = "Anek-Kumar-CV.pdf"; document.body.appendChild(a); a.click(); a.remove(); },
         hire: () => { print("Opening WhatsApp …", "ok"); window.open(WA + "?text=" + encodeURIComponent("Hi Anek, I found you through the terminal on your portfolio!"), "_blank", "noopener"); },

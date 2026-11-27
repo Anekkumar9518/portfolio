@@ -37,7 +37,7 @@
 
   /* ---------- content ---------- */
   const SITES = {
-    shubh: { n: "Shubharambh", full: "Shubharambh Infra Advisors", url: "https://shubharambhinfraadvisors.com/", shot: "assets/img/android/shubh.webp", i: "landmark", c: "#b8913d", d: "Real estate advisory site I built and run. Project search, EMI calculator, area converters. #1 on Google for 55 keywords." },
+    shubh: { n: "Shubharambh", full: "Shubharambh Infra Advisors", url: "https://shubharambhinfraadvisors.com/", shot: "assets/img/android/shubh.webp", i: "landmark", c: "#b8913d", d: "Real estate advisory site I built and run. Project search, EMI calculator, area converters. #1 on Google for 56 keywords." },
     matrix: { n: "Matrix Acres", full: "Matrix Acres", url: "https://www.matrixacres.in/", shot: "assets/img/android/matrix.webp", i: "building-2", c: "#1e2b3c", d: "Real estate website plus a 300+ module CRM behind it, and the lead campaigns that fed it." },
     vision: { n: "Visionwave", full: "Visionwave Technology", url: "https://visionwavetechnology.com/", shot: "assets/img/android/vision.webp", i: "rocket", c: "#3d42d6", d: "Digital agency website with 29 free tools." },
     lmc: { n: "LMC", full: "LMC Healthcare Store", url: "https://lmcstore.in/", shot: "assets/img/android/lmc.webp", i: "leaf", c: "#b3202b", d: "Ayurvedic wellness e-commerce store." },
@@ -85,7 +85,7 @@
       <button type="button" class="dlock__hint" id="dUnlock">${ic("fingerprint")}<span>Swipe up or tap to unlock</span></button>
     </div>
     <div class="dhome" id="dHome">
-      <div class="dglance"><b data-date-short></b><span id="dGlanceWx">${ic("map-pin")}Noida · #1 on Google for 55 keywords</span></div>
+      <div class="dglance"><b data-date-short></b><span id="dGlanceWx">${ic("map-pin")}Noida · #1 on Google for 56 keywords</span></div>
       <div class="dgrid" id="dGrid"></div>
       <button type="button" class="dhome__up" data-drawer aria-label="All apps">${ic("chevron-up")}<span>All apps</span></button>
       <div class="ddock" id="dDock"></div>
@@ -833,7 +833,7 @@
       if (!online()) return draw();
       err = false; draw();
       fetch("https://api.open-meteo.com/v1/forecast?latitude=28.5355&longitude=77.391&current=temperature_2m,apparent_temperature,relative_humidity_2m,wind_speed_10m,weather_code&daily=weather_code,temperature_2m_max,temperature_2m_min&timezone=Asia%2FKolkata&forecast_days=6")
-        .then((r) => r.json()).then((j) => { data = j; draw(); const g = qs("#dGlanceWx"); if (g) { g.innerHTML = ic(w(j.current.weather_code)[1]) + Math.round(j.current.temperature_2m) + "° Noida · #1 on Google for 55 keywords"; icons(); } })
+        .then((r) => r.json()).then((j) => { data = j; draw(); const g = qs("#dGlanceWx"); if (g) { g.innerHTML = ic(w(j.current.weather_code)[1]) + Math.round(j.current.temperature_2m) + "° Noida · #1 on Google for 56 keywords"; icons(); } })
         .catch(() => { err = true; draw(); });
     };
     el.addEventListener("click", (e) => { if (e.target.closest("[data-wx-retry]")) load(); });
@@ -927,7 +927,7 @@
       for (let d = 1; d <= days; d++) { const today = d === now.getDate() && m === now.getMonth() && y === now.getFullYear(); cells += `<span class="${today ? "is-today" : ""}">${d}</span>`; }
       el.innerHTML = bar(first.toLocaleDateString("en-GB", { month: "long", year: "numeric" }), `<button type="button" class="dbar__act" data-cal="-1" aria-label="Previous month">${ic("chevron-left")}</button><button type="button" class="dbar__act" data-cal="1" aria-label="Next month">${ic("chevron-right")}</button>`)
         + `<div class="dapp-body"><div class="dcal">${["M", "T", "W", "T", "F", "S", "S"].map((d) => `<b>${d}</b>`).join("")}${cells}</div>
-        <div class="dcal__ev"><small>Today</small><p>${ic("search")}Google rankings checked: 55 keywords at #1</p><p>${ic("handshake")}Site meetings: about 1 per 10 leads</p></div></div>`;
+        <div class="dcal__ev"><small>Today</small><p>${ic("search")}Google rankings checked: 56 keywords at #1</p><p>${ic("handshake")}Site meetings: about 1 per 10 leads</p></div></div>`;
       icons();
     };
     el.addEventListener("click", (e) => { const b = e.target.closest("[data-cal]"); if (!b) return; m += +b.dataset.cal; if (m < 0) { m = 11; y--; } if (m > 11) { m = 0; y++; } draw(); });
